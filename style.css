@@ -1,7 +1,7 @@
 body {
-  background-color: #020122;
+  background-color: white;
   font-family: "Trebuchet MS", sans-serif;
-  color: #F2F3AE;
+  color: darkblue;
 }
 
 em {
@@ -14,17 +14,17 @@ h2 {
 }
 
 a {
-  color: #FC9E4F;
+  color: blue;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:visited {
-  color: #EDD382;
+  color: purple;
 }
 
 a:hover {
-  color: #F4442E;
+  color: red;
 }
 
 footer {
@@ -38,7 +38,7 @@ footer {
 }
 
 .border {
-  border: 3px solid #FC9E4F;
+  border: 3px solid darkblue;
   margin-top: 16px;
   margin-bottom: 16px;
   padding-top: 0;
@@ -52,8 +52,8 @@ footer {
 
 .content p {
   text-align: left;
-    background: #020112;
-    border-color: #020112;
+    background: lightblue;
+    border-color: grey;
     border-style: solid;
     border-width: 10px;
     margin: 0;
