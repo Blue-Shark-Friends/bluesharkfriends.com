@@ -1,7 +1,7 @@
 body {
-  background-color: white;
+  background-color: #0C0C40;
   font-family: "Trebuchet MS", sans-serif;
-  color: darkblue;
+  color: white;
 }
 
 em {
@@ -14,21 +14,22 @@ h2 {
 }
 
 a {
-  color: blue;
+  color: #5BCEFA;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:visited {
-  color: purple;
+  color: #2B9EFA;
 }
 
 a:hover {
-  color: red;
+  color: #F5A9B8;
 }
 
 footer {
   margin-top: 20px;
+  float: right;
 }
 
 #header-img {
@@ -38,11 +39,11 @@ footer {
 }
 
 .border {
-  border: 3px solid darkblue;
+  border: 3px solid white;
   margin-top: 16px;
   margin-bottom: 16px;
-  padding-top: 0;
-  padding-bottom: 0;
+  display: inline;
+  padding: 10px;
 }
 
 .content {
@@ -52,11 +53,8 @@ footer {
 
 .content p {
   text-align: center;
-    background: lightblue;
-    border-color: lightblue;
-    border-style: solid;
-    border-width: 10px;
-    margin: 0;
+  text-shadow: 2px 2px black;
+  margin: 0;
 }
 
 .content > ul {
@@ -84,6 +82,42 @@ li {
 
 p.inline {
   text-align: center;
+}
+
+.menu-icon {
+  font-size: 2em;
+  margin-left: 12px;
+}
+
+.menu-icon a {
+  color: white;
+  font-weight: normal;
+}
+
+.menu-icon a:visited {
+  color: white;
+}
+
+.menu-icon a:hover {
+  color: white;
+}
+
+.menu {
+  margin-left: -10px;
+  margin-top: 12px;
+  position:fixed;
+  background-color: #0C0C40;
+  padding-right: 20px;
+  height: 100%;
+  visibility: hidden;
+}
+
+.script-text {
+  font-family: "Dancing Script", cursive;
+}
+
+.border:hover a {
+  color: #F5A9B8;
 }
 
 @media screen and (min-width: 800px) {
