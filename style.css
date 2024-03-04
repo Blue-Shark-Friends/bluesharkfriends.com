@@ -123,6 +123,11 @@ p.inline {
   color: #F5A9B8;
 }
 
+.about-img {
+  float: left;
+  padding-right: 10px;
+}
+
 @media screen and (min-width: 800px) {
   #header-img {
     width: 25%;
