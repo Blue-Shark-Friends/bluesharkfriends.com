@@ -1,0 +1,23 @@
+{
+  "name": "bluesharkfriends.com",
+  "version": "1.0.0",
+  "description": "Blue Shark Friends website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blue-Shark-Friends/bluesharkfriends.com.git"
+  },
+  "author": "called2voyage",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Blue-Shark-Friends/bluesharkfriends.com/issues"
+  },
+  "homepage": "https://github.com/Blue-Shark-Friends/bluesharkfriends.com#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3"
+  }
+}

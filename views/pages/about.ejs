@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blue Shark Friends - About</title>
+  <!--<link rel="shortcut icon" type="image/x-icon" href="c2v.ico" />-->
+  <meta name="description" content="About Blue Shark Friends and the co-founders, Hannah Parker and Josie Stewart. A company run by two disabled trans women to serve the transgender community. BIPOC led, Black led">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script>
+    function showHideMenu()
+    {
+        var menu = document.getElementsByClassName("menu")[0];
+        if (menu.style.visibility === "visible")
+        {
+        menu.style.visibility = "hidden"
+        }
+        else
+        {
+        menu.style.visibility = "visible"
+        }
+    }
+</script>
+
+<div class="menu-icon"><a href="javascript:showHideMenu()">&#x2630;</a></div>
+<div class="menu">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li>About</li>
+    <li><a href="solutions">Solutions</a></li>
+    <li><a href="contact">Contact</a></li>
+  </ul>
+</div>
+
+<div class="content" style="display: flex; flex-direction: column;">
+<h1>Blue Shark Friends</h1>
+
+<h2 style="margin-top: 0;">About</h2>
+<div>
+  <% about_data[0].about_bsf.split("\n").forEach(element => { %>
+    <%= element %>
+    <br />
+  <% }); %>
+</div>
+
+<div>
+<h3><%= about_data[0].people.names[0] %></h3>
+<img class="about-img" src="images/hannah.jpg" width="200px" height="267px" alt="Picture of Hannah - a woman with a floral pattern cane"/>
+<div style="text-align: left;">
+  <%= about_data[0].people.bios[0] %>
+<br /><br />
+<a href="<%= about_data[0].people.link_refs[0] %>"><%= about_data[0].people.link_text[0] %></a>
+</div>
+</div>
+
+<div>
+<h3><%= about_data[0].people.names[1] %></h3>
+<img class="about-img" src="images/josie.jpg" width="200px" height="201px" alt="Picture of Josie - a blue-haired woman in front of a brick wall"/>
+<div style="text-align: left;">
+  <% about_data[0].people.bios[1].split("\n").forEach(element => { %>
+    <%= element %>
+    <br />
+  <% }); %>
+</div>
+</div>
+<br /><br />
+</div>
+
+<footer>
+  <small>Copyright &copy; 2024, Blue Shark Friends. All rights reserved.</small>
+</footer>
+
+</body>
+</html>
