@@ -38,27 +38,27 @@
 
 <h2 style="margin-top: 0;">About</h2>
 <div>
-  <% about_data[0].about_bsf.split("\n").forEach(element => { %>
+  <% about_data.about_bsf.split("\n").forEach(element => { %>
     <%= element %>
     <br />
   <% }); %>
 </div>
 
 <div>
-<h3><%= about_data[0].people.names[0] %></h3>
+<h3><%= about_data.people[0].name %></h3>
 <img class="about-img" src="images/hannah.jpg" width="200px" height="267px" alt="Picture of Hannah - a woman with a floral pattern cane"/>
 <div style="text-align: left;">
-  <%= about_data[0].people.bios[0] %>
+  <%= about_data.people[0].bio %>
 <br /><br />
-<a href="<%= about_data[0].people.link_refs[0] %>"><%= about_data[0].people.link_text[0] %></a>
+<a href="<%= about_data.people[0].link_ref %>"><%= about_data.people[0].link_text %></a>
 </div>
 </div>
 
 <div>
-<h3><%= about_data[0].people.names[1] %></h3>
+<h3><%= about_data.people[1].name %></h3>
 <img class="about-img" src="images/josie.jpg" width="200px" height="201px" alt="Picture of Josie - a blue-haired woman in front of a brick wall"/>
 <div style="text-align: left;">
-  <% about_data[0].people.bios[1].split("\n").forEach(element => { %>
+  <% about_data.people[1].bio.split("\n").forEach(element => { %>
     <%= element %>
     <br />
   <% }); %>
