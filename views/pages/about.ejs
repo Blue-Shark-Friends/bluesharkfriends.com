@@ -44,26 +44,24 @@
   <% }); %>
 </div>
 
-<div>
-<h3><%= about_data.people[0].name %></h3>
-<img class="about-img" src="images/hannah.jpg" width="200px" height="267px" alt="Picture of Hannah - a woman with a floral pattern cane"/>
-<div style="text-align: left;">
-  <%= about_data.people[0].bio %>
-<br /><br />
-<a href="<%= about_data.people[0].link_ref %>"><%= about_data.people[0].link_text %></a>
-</div>
-</div>
-
-<div>
-<h3><%= about_data.people[1].name %></h3>
-<img class="about-img" src="images/josie.jpg" width="200px" height="201px" alt="Picture of Josie - a blue-haired woman in front of a brick wall"/>
-<div style="text-align: left;">
-  <% about_data.people[1].bio.split("\n").forEach(element => { %>
-    <%= element %>
-    <br />
-  <% }); %>
-</div>
-</div>
+<% about_data.people.forEach(member => { %>
+  <div>
+    <h3><%= member.name %></h3>
+    <img class="about-img" src="<%= member.img_src %>" width="200px" height="<% if(member.name === "Hannah Parker"){ %>267px<% } else{ %>201px<% } %>"/>
+    <div style="text-align: left;">
+      <% if(member.name === "Hannah Parker"){ %>
+        <%= member.bio %>
+        <br /><br />
+        <a href="<%= member.link_ref %>"><%= member.link_text %></a>
+      <% } else { %>
+        <% member.bio.split("\n").forEach(element => { %>
+          <%= element %>
+          <br />
+        <% }); %>
+      <% } %>
+    </div>
+  </div>
+<% }); %>
 <br /><br />
 </div>
 
