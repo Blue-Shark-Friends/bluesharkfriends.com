@@ -4,21 +4,6 @@
   <%- include('../partials/head', {title:contact_data.title, description:contact_data.description}) %>
 </head>
 <body>
-<script>
-    function showHideMenu()
-    {
-        var menu = document.getElementsByClassName("menu")[0];
-        if (menu.style.visibility === "visible")
-        {
-        menu.style.visibility = "hidden"
-        }
-        else
-        {
-        menu.style.visibility = "visible"
-        }
-    }
-</script>
-
 <div class="menu-icon"><a href="javascript:showHideMenu()">&#x2630;</a></div>
 <div class="menu">
   <ul>
