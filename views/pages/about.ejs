@@ -7,9 +7,7 @@
   <%- include('../partials/menu', {title:about_data.title}) %>
 
 <div class="content" style="display: flex; flex-direction: column;">
-<h1>Blue Shark Friends</h1>
-
-<h2 style="margin-top: 0;">About</h2>
+  <%- include('../partials/header', {title:about_data.title, subheading: 'About'}) %>
 <div>
   <% about_data.about_bsf.split("\n").forEach(element => { %>
     <%= element %>
