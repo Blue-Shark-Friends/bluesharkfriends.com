@@ -4,15 +4,7 @@
   <%- include('../partials/head', {title:about_data.title, description:about_data.description}) %>
 </head>
 <body>
-<div class="menu-icon"><a href="javascript:showHideMenu()">&#x2630;</a></div>
-<div class="menu">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li>About</li>
-    <li><a href="solutions">Solutions</a></li>
-    <li><a href="contact">Contact</a></li>
-  </ul>
-</div>
+  <%- include('../partials/menu', {title:about_data.title}) %>
 
 <div class="content" style="display: flex; flex-direction: column;">
 <h1>Blue Shark Friends</h1>
