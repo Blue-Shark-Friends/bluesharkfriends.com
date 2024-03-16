@@ -128,6 +128,11 @@ p.inline {
   padding-right: 10px;
 }
 
+.pronouns {
+  margin-top: -1em;
+  font-size: small;
+}
+
 @media screen and (min-width: 800px) {
   #header-img {
     width: 25%;

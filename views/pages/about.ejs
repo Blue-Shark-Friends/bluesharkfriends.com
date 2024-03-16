@@ -18,6 +18,7 @@
 <% about_data.people.forEach(member => { %>
   <div>
     <h3><%= member.name %></h3>
+    <h4 class="pronouns"><%= member.pronouns %></h4>
     <img class="about-img" src="<%= member.img_src %>" width="200px" height="<% if(member.name === "Hannah Parker"){ %>267px<% } else{ %>201px<% } %>" alt="<%= member.img_alt %>"/>
     <div style="text-align: left;">
       <% if(member.name === "Hannah Parker"){ %>
