@@ -133,6 +133,24 @@ p.inline {
   font-size: small;
 }
 
+.manifesto div {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.manifesto h3 {
+  color: #dd526e;
+  margin-bottom: 5px;
+}
+
+.manifesto p {
+  text-align: left;
+}
+
+.manifesto b {
+  color: #F5A9B8;
+}
+
 @media screen and (min-width: 800px) {
   #header-img {
     width: 25%;

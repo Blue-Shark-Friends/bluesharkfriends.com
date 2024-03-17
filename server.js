@@ -19,6 +19,12 @@ app.get('/about', function(req, res) {
   res.render('pages/about', {about_data: about_data});
 });
 
+// manifesto page
+let manifesto_data = require('./views/data/manifesto.json')
+app.get('/manifesto', function(req, res) {
+  res.render('pages/manifesto', {manifesto_data: manifesto_data});
+});
+
 // solutions page
 let solutions_data = require('./views/data/solutions.json')
 app.get('/solutions', function(req, res) {
