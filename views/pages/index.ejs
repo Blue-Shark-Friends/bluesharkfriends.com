@@ -4,24 +4,24 @@
   <%- include('../partials/head', {title:index_data.title, description:index_data.description}) %>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link href="<%= branding_data.tagline_font_embed %>" rel="stylesheet">
 </head>
 <body>
-<!--<img id="header-img" src="josie.png" alt="Picture of Josie - a brown haired, blue eyed woman with black rimmed glasses"/>-->
+<!--<img id="header-img" src="images/<%= branding_data.header_img %>" alt="Picture of Josie - a brown haired, blue eyed woman with black rimmed glasses"/>-->
 <%- include('../partials/menu', {title:index_data.title}) %>
 
 <div class="content">
   <%- include('../partials/header', {title:index_data.title}) %>
 <div class="script-text">
 <p>
-  Software <em>by</em> trans people, <em>for</em> trans people
+  <%- branding_data.tagline %>
 </p>
 </div>
 
 <br /><br />
 
-<div class="border" onclick="location.href='mailto:info@bluesharkfriends.com';" style="cursor: pointer;">
-  <a href="mailto:info@bluesharkfriends.com">Schedule a consultation</a>
+<div class="border" onclick="location.href='mailto:<%= branding_data.email %>';" style="cursor: pointer;">
+  <a href="mailto:<%= branding_data.email %>">Schedule a consultation</a>
 </div>
 
 </div>
