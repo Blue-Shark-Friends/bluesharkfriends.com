@@ -96,4 +96,21 @@ app.render('pages/contact', {contact_data: contact_data, branding_data: branding
     }
 });
 
+// story page
+let story_data = require('./views/data/story.json')
+app.render('pages/story', {story_data: story_data, branding_data: branding_data}, (err, res) =>{
+    if (err) {
+        console.error('Error rendering');
+    } else {
+        console.log(__dirname + '/story.html')
+        fs.writeFile(__dirname + '/story.html', res, err => {
+            if (err) {
+              console.error(err);
+            } else {
+              // file written successfully
+            }
+          });
+    }
+});
+
 console.log('Static files generated.');

@@ -151,6 +151,24 @@ p.inline {
   color: #F5A9B8;
 }
 
+.story div {
+  margin-bottom: 20px;
+}
+
+.story p {
+  text-align: left;
+}
+
+.story .red {
+  color: red;
+}
+
+.story .aside {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: small;
+}
+
 .license {
   font-size: small;
 }

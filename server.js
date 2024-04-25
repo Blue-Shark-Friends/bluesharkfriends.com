@@ -39,5 +39,11 @@ app.get('/contact', function(req, res) {
     res.render('pages/contact', {contact_data: contact_data, branding_data: branding_data});
 });
 
+// story page
+let story_data = require('./views/data/story.json')
+app.get('/story', function(req, res) {
+    res.render('pages/story', {story_data: story_data, branding_data: branding_data});
+});
+
 app.listen(8080);
 console.log('Server is listening on port 8080');
