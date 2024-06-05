@@ -1,0 +1,367 @@
+body {
+  background-color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  color: black;
+  min-height: 97vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.palestine {
+  display: flex;
+  flex-direction: column;
+}
+
+.blackblock {
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.liberation {
+  text-align: center;
+  color: white;
+}
+
+.ceasefire {
+  text-align: left !important;
+  color: white;
+}
+
+.divestment {
+  text-align: left !important;
+  color: #469145;
+}
+
+.indentblock {
+  padding: 0 60px 0 60px;
+}
+
+.calltoaction {
+  text-align: left !important;
+}
+
+.movement {
+  text-align: left !important;
+  color: red;
+}
+
+.resources_below {
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.imglinkbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.imglinkbox img {
+  max-width: 200px;
+}
+
+.imglinkbox a {
+  margin-bottom: 30px;
+}
+
+.palestine_black {
+  color: black;
+}
+
+.palestine_green {
+  color: #469145;
+}
+
+.palestine_red {
+  color: red;
+}
+
+.fitcontent {
+  width:fit-content;
+}
+
+.poweredby {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+.poweredby .cardlink {
+  border: 2px solid #888888;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 2px;
+  box-shadow: 2px 5px #dddddd;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.poweredby p {
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.bytext {
+  font-size:x-small;
+  font-weight:bold;
+}
+
+.poweredby em {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.subtext {
+  font-size:xx-small;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #469145;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #387537;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  margin-top: auto;
+  text-align: right;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+#header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border {
+  border: 3px solid white;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline;
+  padding: 10px;
+}
+
+.content {
+  /*margin:0 auto;*/
+  margin-top: -3.75em;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content p {
+  text-align: center;
+  /*margin: 0;*/
+}
+
+.content > ul {
+  display: inline-block;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.content > ul > ul {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 10px;
+  font-style: italic;
+}
+
+.cardlink {
+  position: relative;
+  width: 200px;
+  border: 2px solid #888888;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 30px;
+  box-shadow: 5px 10px #dddddd;
+}
+
+.cardlink p {
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cardlink:hover {
+  cursor: pointer;
+}
+
+.cardlink:hover p {
+  text-decoration: underline;
+}
+
+.linkspan {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+.book-title {
+  font-style: italic;
+}
+
+p.inline {
+  text-align: center;
+}
+
+.menu-icon {
+  font-size: 2em;
+  margin-left: 20px;
+  z-index: 1;
+  margin-top: 0.5em;
+}
+
+.menu-icon a {
+  color: black;
+  font-weight: normal;
+}
+
+.menu-icon a:visited {
+  color: black;
+}
+
+.menu-icon a:hover {
+  color: black;
+}
+
+.menu {
+  margin-left: -10px;
+  margin-top: 70px;
+  position:fixed;
+  background-color: white;
+  padding-right: 20px;
+  height: 100%;
+  visibility: hidden;
+}
+
+.script-text {
+  font-family: "Dancing Script", cursive;
+}
+
+.border:hover a {
+  color: #F5A9B8;
+}
+
+.about-img {
+  float: left;
+  padding-right: 10px;
+}
+
+.pronouns {
+  margin-top: -1em;
+  font-size: small;
+}
+
+.manifesto div {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.manifesto h3 {
+  color: #dd526e;
+  margin-bottom: 5px;
+}
+
+.manifesto p {
+  text-align: left;
+}
+
+.manifesto b {
+  color: #F5A9B8;
+}
+
+.license {
+  font-size: small;
+}
+
+.poweredby {
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  margin-left: -8px;
+  font-size: x-small;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  #header-img {
+    width: 25%;
+    height: 25%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen
+  and (min-width: 320px)
+  and (max-width: 800px) {
+  #header-img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .divestment {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .movement {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}

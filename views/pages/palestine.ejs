@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/palestine_head', {title:palestine_data.title, description:palestine_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/menu', {title:palestine_data.title}) %>
+
+<div class="content">
+  <%- include('../partials/palestine_header', {title:palestine_data.title, subheading: 'Palestine'}) %>
+  <div class="palestine">
+    <div class="blackblock">
+        <p class="liberation">There is no trans liberation without Palestinian liberation.</p>
+        <p class="ceasefire">Ceasefire Now<br />Free Palestine<br />From the River to the Sea</p>
+    </div>
+    <p class="divestment">We are in the process of divesting all of our products from Google and AWS.</p>
+    <div class="indentblock">
+        <p class="calltoaction">We are calling on all of our fellow <em class="palestine_black">trans</em> <em class="palestine_red">disabled</em> <em class="palestine_green">anticapitalist</em> tech companies to do the same.</p>
+    </div>
+    <p class="movement">As this pressure movement grows, we will link other companies and organizations who are divesting until these tech companies end their support of the occupation.</p>
+    <div class="resources_below"><p>Below are resources where your contributions will directly save Palestinian lives.</p></div>
+  </div>
+  <br />
+  <div class="imglinkbox">
+    <div class="cardlink"><a class="linkspan" href="https://www.pcrf.net/"></a><img src="images/Palestine_Children's_Relief_Fund_(PCRF)_logo.png" /></div>
+    <div class="cardlink"><a class="linkspan" href="https://donate.wck.org/give/525879/#!/donation/checkout"></a><img src="images/WorldCentralKitchenLogo.png" /></div>
+    <div class="cardlink"><a class="linkspan" href="https://www.unrwa.org/"></a><img src="images/unrwa.png" /></div>
+    <div class="cardlink"><a class="linkspan" href="https://help.rescue.org/donate/evergreen-crisis-ME"></a><img src="images/internationalRescueCommitteeLogo.webp" style="height: 288px; object-fit: cover; object-position: -155px" /></div>
+    <div class="cardlink"><a class="linkspan" href="https://buymeacoffee.com/operationolivebranch"></a><img src="images/OOB%20Logo%20TRANSPARENT%20BR%20(1).png" /></div>
+  </div>
+  <br />
+</div>
+
+  <%- include('../partials/footer') %>
+  
+</body>
+</html>

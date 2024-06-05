@@ -113,4 +113,21 @@ app.render('pages/story', {story_data: story_data, branding_data: branding_data}
     }
 });
 
+// palestine page
+let palestine_data = require('./views/data/palestine.json')
+app.render('pages/palestine', {palestine_data: palestine_data, branding_data: branding_data}, (err, res) =>{
+    if (err) {
+        console.error('Error rendering');
+    } else {
+        console.log(__dirname + '/palestine.html')
+        fs.writeFile(__dirname + '/palestine.html', res, err => {
+            if (err) {
+              console.error(err);
+            } else {
+              // file written successfully
+            }
+          });
+    }
+});
+
 console.log('Static files generated.');
