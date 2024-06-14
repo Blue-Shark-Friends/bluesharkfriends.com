@@ -79,6 +79,23 @@ app.render('pages/solutions', {solutions_data: solutions_data, branding_data: br
     }
 });
 
+// needs page
+let story_data = require('./views/data/needs.json')
+app.render('pages/needs', {needs_data: needs_data, branding_data: branding_data}, (err, res) =>{
+    if (err) {
+        console.error('Error rendering');
+    } else {
+        console.log(__dirname + '/needs.html')
+        fs.writeFile(__dirname + '/needs.html', res, err => {
+            if (err) {
+              console.error(err);
+            } else {
+              // file written successfully
+            }
+          });
+    }
+});
+
 // contact page
 let contact_data = require('./views/data/contact.json')
 app.render('pages/contact', {contact_data: contact_data, branding_data: branding_data}, (err, res) =>{

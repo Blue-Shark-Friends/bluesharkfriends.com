@@ -15,7 +15,7 @@ body {
 }
 
 #freepalestine {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .donate {
@@ -90,6 +90,102 @@ footer {
   padding: 0;
   padding-bottom: 10px;
   font-style: italic;
+}
+
+.needslist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.needcard {
+  position: relative;
+  width: 200px;
+  border: 5px solid #888888;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 30px;
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  text-align: left;
+}
+
+.needcard p {
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: none;
+}
+
+.circlepic {
+  clip-path: circle();
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+}
+
+.need-header {
+  width: 100px;
+  position: relative;
+  top: -80px;
+  margin-left: 110px;
+}
+
+.need-header h3 {
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.need-text {
+  margin-top: -70px;
+}
+
+.need-text p {
+  text-align: left;
+  font-size:x-small;
+}
+
+.need-button {
+  width: 100%;
+  text-align: center;
+}
+
+.subtext {
+  font-size: xx-small;
+}
+
+.cardlink {
+  position: relative;
+  width: 200px;
+  border: 2px solid #888888;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 30px;
+  box-shadow: 5px 10px #dddddd;
+}
+
+.cardlink p {
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cardlink:hover {
+  cursor: pointer;
+}
+
+.cardlink:hover p {
+  text-decoration: underline;
+}
+
+.linkspan {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
 }
 
 li {

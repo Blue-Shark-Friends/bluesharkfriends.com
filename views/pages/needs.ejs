@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:needs_data.title, description:needs_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/menu', {title:needs_data.title}) %>
+
+<div class="content">
+  <%- include('../partials/header', {title:needs_data.title, subheading: 'Needs'}) %>
+  <p style="margin-bottom: 10px">Some of the people in our community need help.
+    <br /><br />
+    Eventually, we would like to create our own open-source fundraising tool.
+    <br /><br />
+    But needs don't wait for you to finish building tools.
+  </p>
+  <div class="needslist">
+    <div class="needcard">
+      <div class="circlepic"><img src="images/serena-sonoma.jpg" width="90px" style="zoom: 150%; margin-left: -22px" /></div>
+      <div class="need-header">
+        <span class="subtext">Journalist Embed</span>
+        <h3>Serena Sonoma</h3>
+        <span class="subtext">she/her</span>
+      </div>
+      <div class="need-text">
+        <p>Serena Sonoma is an amazing trans journalist who has been friends with us for a couple years now.  She's signed on to writing the first article on Blue Shark Friends.  And she's doing all this while facing housing instability in San Francisco.  If you are able to give, please help her out below.</p>
+      </div>
+      <div class="need-button"><a href="https://venmo.com/u/SerenaAdrienne"><img src="images/Venmo-Logo-PNG-File.png" width="100px" /></a></div>
+    </div>
+    <div class="needcard">
+      <div class="circlepic"><img src="images/veezie-lu-discotheque.jpeg" width="90px" style="zoom: 150%; margin-left: -12px" /></div>
+      <div class="need-header">
+        <span class="subtext">Crewmate</span>
+        <h3>Veezie Lu Discotheque</h3>
+        <span class="subtext">she/he/they</span>
+      </div>
+      <div class="need-text">
+        <p>Veezie Lu Discotheque has been a friend, supporter, and educator for years now.  We have slowly watched with horror as his family slid into poverty.  It has been a long journey but their needs now are more urgent than ever.</p>
+      </div>
+      <div class="need-button"><iframe class="gfm-embed-iframe" width="100%" height="450" frameborder="0" scrolling="no" src="https://www.gofundme.com/f/please-help-resilient-family-through-stuggles/widget/large?sharesheet=CAMPAIGN_PAGE&amp;attribution_id=undefined&amp;utm_content=localhost&amp;utm_medium=referral&amp;utm_source=widget#:~:tcm-regime=GDPR&amp;tcm-prompt=Hidden"></iframe></div>
+    </div>
+    <div class="needcard">
+      <div class="circlepic"><img src="images/river-bailey.jpeg" width="90px" style="margin-top: -5px" /></div>
+      <div class="need-header">
+        <span class="subtext">Crewmate</span>
+        <h3>River <br />Bailey</h3>
+        <span class="subtext">she/her</span>
+      </div>
+      <div class="need-text">
+        <p>River Bailey is one of the friends who welcomed us to Denver.  She has been instrumental in our research on Know-Your-Customer rules regarding crowdfunding.  She has also helped us find joy again in game nights and community.  You can help her out below.</p>
+      </div>
+      <div class="need-button"><iframe class="gfm-embed-iframe" width="100%" height="400" frameborder="0" scrolling="no" src="https://www.gofundme.com/f/support-river-baileys-family-in-tough-times/widget/large?sharesheet=CAMPAIGN_PAGE&amp;attribution_id=undefined&amp;utm_content=localhost&amp;utm_medium=referral&amp;utm_source=widget#:~:tcm-regime=GDPR&amp;tcm-prompt=Hidden"></iframe></div>
+    </div>
+    <div class="needcard">
+      <div class="circlepic"><img src="images/jes-mcneal.jpeg" width="90px" style="zoom: 90%; margin-top: -10px" /></div>
+      <div class="need-header">
+        <span class="subtext">Family</span>
+        <h3>Jes <br />McNeal</h3>
+        <span class="subtext">they/he</span>
+      </div>
+      <div class="need-text">
+        <p>Jes has been wanting top surgery since before they knew they were trans.  But when their disability worsened and Hannah lost her job the pathway to top surgery was cut off.  This is how you can contribute to them paying out-of-pocket.</p>
+      </div>
+      <div class="need-button"><iframe class="gfm-embed-iframe" width="100%" height="380" frameborder="0" scrolling="no" src="https://www.gofundme.com/f/support-jes-in-their-journey-to-top-surgery/widget/large?sharesheet=CAMPAIGN_PAGE&amp;attribution_id=undefined&amp;utm_content=localhost&amp;utm_medium=referral&amp;utm_source=widget#:~:tcm-regime=GDPR&amp;tcm-prompt=Hidden"></iframe></div>
+    </div>
+  </div>
+  <br />
+</div>
+
+  <%- include('../partials/footer') %>
+  
+</body>
+</html>

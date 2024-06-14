@@ -33,6 +33,12 @@ app.get('/solutions', function(req, res) {
     res.render('pages/solutions', {solutions_data: solutions_data, branding_data: branding_data});
 });
 
+// needs page
+let needs_data = require('./views/data/needs.json')
+app.get('/needs', function(req, res) {
+    res.render('pages/needs', {needs_data: needs_data, branding_data: branding_data});
+});
+
 // contact page
 let contact_data = require('./views/data/contact.json')
 app.get('/contact', function(req, res) {
