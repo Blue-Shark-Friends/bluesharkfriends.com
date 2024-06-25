@@ -57,5 +57,11 @@ app.get('/palestine', function(req, res) {
     res.render('pages/palestine', {palestine_data: palestine_data, branding_data: branding_data});
 });
 
+// contracts congratulations page
+let contractCongrats_data = require('./views/data/contracts_congratulations.json')
+app.get('/contracts/congratulations', function(req, res) {
+	res.render('pages/contracts_congratulations', {contractCongrats_data: contractCongrats_data, branding_data: branding_data});
+});
+
 app.listen(8080);
 console.log('Server is listening on port 8080');
