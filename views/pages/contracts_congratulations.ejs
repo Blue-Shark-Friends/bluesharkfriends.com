@@ -7,14 +7,48 @@
   <%- include('../partials/menu', {title:contractCongrats_data.title}) %>
 
 <div class="content">
-  <%- include('../partials/header', {title:contractCongrats_data.title, subheading: 'Congratulations'}) %>
+  <%- include('../partials/header', {title:contractCongrats_data.title, subheading: 'Contracts'}) %>
 
   <div>
-  
+      <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <div style={{ fontSize: '3em', border: '1px solid #000', padding: '10px', display: 'inline-block' }}>
+        Congratulations
+      </div>
+      <div style={{ marginTop: '20px' }}>
+        <p>You have completed Step #<span id = numOfStep></span> of the Blue Shark Friends' Service Exchange Agreement</p>
+      </div>
+      <div id = nextSection, style={{ marginTop: '20px' }}>
+        <p>We will email you soon to continue the next step, but if you want to work ahead, click button below.</p>
+		
+        <button id = nextStepButton>
+          Step <span id = numOfNextStep></span>
+        </button>
+      </div>
+    </div>
   </div>
 <br /><br />
 </div>
+<script>
+	//TODO: move this whole script into its own file
+  const params = new URLSearchParams(window.location.search);
 
+  const numOfStep = params.get("numOfStep");
+  const urlOfStep = params.get("urlOfStep");
+  
+  //TODO: need to handle when numOfStep is empty
+  document.getElementById("numOfStep").innerHTML = numOfStep;
+  document.getElementById("numOfNextStep").innerHTML = parseInt(numOfStep) + 1;
+  
+  //TODO: this needs to happen on load
+  if (!urlOfStep)
+	document.getElementById("nextSection").visibility = false; //TODO: this is not working either, i think this logic needs to be moved to an 'onload' function; whatever you do. NO ANGULAR
+  else
+	document.getElementById("nextStepButton").onclick = TakeUserToNextStep(); //TODO: currently this onclick does nothing
+  
+  function TakeUserToNextStep() {
+	window.open(urlOfStep, '_blank'); //TODO:  maybe window.open is missing parameters
+}
+</script>
 <%- include('../partials/footer') %>
 
 </body>
