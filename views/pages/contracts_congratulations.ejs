@@ -15,15 +15,17 @@
         Congratulations
       </div>
       <div style={{ marginTop: '20px' }}>
-        <p>You have completed Step #<span id = numOfStep></span> of the Blue Shark Friends' Service Exchange Agreement</p>
+        <p>You have completed Step #<span id = 'numOfStep'></span> of the Blue Shark Friends' Service Exchange Agreement</p>
       </div>
-      <div id = nextSection, style={{ marginTop: '20px' }}>
+      <div id = 'nextSection', style={{ marginTop: '20px' }}>
         <p>We will email you soon to continue the next step, but if you want to work ahead, click button below.</p>
-		
-        <button id = nextStepButton>
-          Step <span id = numOfNextStep></span>
+        <button id = 'nextStepButton'>
+          Step <span id = 'numOfNextStep'></span>
         </button>
       </div>
+	  <div id = 'finishedSection'>
+		<p>You did it!  You are done!</p>
+	  </div>
     </div>
   </div>
 <br /><br />
@@ -35,18 +37,20 @@
   const numOfStep = params.get("numOfStep");
   const urlOfStep = params.get("urlOfStep");
   
-  //TODO: need to handle when numOfStep is empty
   document.getElementById("numOfStep").innerHTML = numOfStep;
   document.getElementById("numOfNextStep").innerHTML = parseInt(numOfStep) + 1;
   
-  //TODO: this needs to happen on load
-  if (!urlOfStep)
-	document.getElementById("nextSection").visibility = false; //TODO: this is not working either, i think this logic needs to be moved to an 'onload' function; whatever you do. NO ANGULAR
-  else
-	document.getElementById("nextStepButton").onclick = TakeUserToNextStep(); //TODO: currently this onclick does nothing
+  if (!urlOfStep) {
+	document.getElementById("nextSection").style.display = 'none';
+	document.getElementById("finishedSection").style.display = 'block';
+  }
+  else {
+	document.getElementById("nextStepButton").onclick = TakeUserToNextStep;
+	document.getElementById("finishedSection").style.display = 'none';
+  }
   
   function TakeUserToNextStep() {
-	window.open(urlOfStep, '_blank'); //TODO:  maybe window.open is missing parameters
+	window.open(urlOfStep, '_blank');
 }
 </script>
 <%- include('../partials/footer') %>
