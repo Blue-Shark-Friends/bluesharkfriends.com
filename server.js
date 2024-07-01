@@ -62,6 +62,18 @@ let contractCongrats_data = require('./views/data/contracts_congratulations.json
 app.get('/contracts/congratulations', function(req, res) {
 	res.render('pages/contracts_congratulations', {contractCongrats_data: contractCongrats_data, branding_data: branding_data});
 });
+app.get("/contracts/step1" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/rjzeBPhX5nDaD6H6Q_S5g");
+});
+app.get("/contracts/step2" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/rjzeBPhX5nDaD6H6Q_S5g");
+});
+app.get("/contracts/step3" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/rjzeBPhX5nDaD6H6Q_S5g");
+});
+app.get("/contracts/step4" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/hLqX3v52H7unp3EzasPEl");
+});
 
 app.listen(8080);
 console.log('Server is listening on port 8080');
