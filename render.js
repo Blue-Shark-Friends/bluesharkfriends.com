@@ -147,4 +147,20 @@ app.render('pages/palestine', {palestine_data: palestine_data, branding_data: br
     }
 });
 
+// contracts congratulations page
+app.render('pages/palestine', {branding_data: branding_data}, (err, res) =>{
+    if (err) {
+        console.error('Error rendering');
+    } else {
+        console.log(__dirname + '/contracts/congratulations.html')
+        fs.writeFile(__dirname + '/contracts/congratulations.html', res, err => {
+            if (err) {
+              console.error(err);
+            } else {
+              // file written successfully
+            }
+          });
+    }
+});
+
 console.log('Static files generated.');

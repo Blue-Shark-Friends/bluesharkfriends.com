@@ -57,5 +57,29 @@ app.get('/palestine', function(req, res) {
     res.render('pages/palestine', {palestine_data: palestine_data, branding_data: branding_data});
 });
 
+// contracts congratulations page
+let contractCongrats_data = require('./views/data/contracts_congratulations.json')
+app.get('/contracts/congratulations', function(req, res) {
+	res.render('pages/contracts_congratulations', {contractCongrats_data: contractCongrats_data, branding_data: branding_data});
+});
+app.get("/contracts/step1" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/7JXH_loVCGI8Iqe0nd6GA");
+});
+app.get("/contracts/step2" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/maWFi-0zb300zg73FYmtq");
+});
+app.get("/contracts/step3" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/Ux-TF-RCVG4Tbwf_yp8yd");
+});
+app.get("/contracts/step4" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/_Fgy3p1TPqluMmLYMUsfv");
+});
+app.get("/contracts/step5" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/OPgdLRx7TgI842-a-wasR");
+});
+app.get("/contracts/step6" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/9UhTYdeF_XZESLqNzKuIs");
+});
+
 app.listen(8080);
 console.log('Server is listening on port 8080');
