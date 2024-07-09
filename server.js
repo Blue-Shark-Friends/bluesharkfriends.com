@@ -68,6 +68,18 @@ app.get("/contracts/step1" , (req,res) => {
 app.get("/contracts/step2" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/maWFi-0zb300zg73FYmtq");
 });
+app.get("/contracts/step2/custom" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/maWFi-0zb300zg73FYmtq");
+});
+app.get("/contracts/step2/upgraded" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/V4v6316XRxcn66l9yPlsn");
+});
+app.get("/contracts/step2/basic" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/F4rEnnnCvH2wf_SWpWGfM");
+});
+app.get("/contracts/step2/alt-basic" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/-wxclKTRLg8YlR--o-518");
+});
 app.get("/contracts/step3" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/Ux-TF-RCVG4Tbwf_yp8yd");
 });
