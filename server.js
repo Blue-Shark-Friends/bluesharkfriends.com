@@ -65,8 +65,29 @@ app.get('/contracts/congratulations', function(req, res) {
 app.get("/contracts/step1" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/7JXH_loVCGI8Iqe0nd6GA");
 });
+app.get("/contracts/step1/free" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/qYvlrBs9BNWDrtVqEReB_");
+});
+app.get("/contracts/step1/no-site" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/wCj4hIx1tgvxDfIdLZ8O6");
+});
+app.get("/contracts/step1/custom" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/7JXH_loVCGI8Iqe0nd6GA");
+});
+app.get("/contracts/step1/upgraded" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/-tHeyRJvKoUZVJKDHWo9_");
+});
+app.get("/contracts/step1/basic" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/e-G2SOn_7qEOt1Lsjfdop");
+});
+app.get("/contracts/step1/alt-basic" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/FqAbUqogbZkjwiwZTiT1m");
+});
 app.get("/contracts/step2" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/maWFi-0zb300zg73FYmtq");
+});
+app.get("/contracts/step2/free" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/488XjoW3moLYag7HTd4KW");
 });
 app.get("/contracts/step2/custom" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/maWFi-0zb300zg73FYmtq");
@@ -81,10 +102,16 @@ app.get("/contracts/step2/alt-basic" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/-wxclKTRLg8YlR--o-518");
 });
 app.get("/contracts/step3" , (req,res) => {
-	res.redirect(301, "https://app.documenso.com/d/Ux-TF-RCVG4Tbwf_yp8yd");
+	res.redirect(301, "https://app.documenso.com/d/JRHgiGbF-OoZD5cMqtCWD");
+});
+app.get("/contracts/step3/free" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/uV_JJ4ycGZBpZoL3YgyBS");
 });
 app.get("/contracts/step4" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/_Fgy3p1TPqluMmLYMUsfv");
+});
+app.get("/contracts/step4/free" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/_FVEbqgwv9iB9JUR-hLCL");
 });
 app.get("/contracts/step5" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/OPgdLRx7TgI842-a-wasR");
