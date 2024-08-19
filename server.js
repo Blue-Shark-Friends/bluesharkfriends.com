@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var httpProxy = require('http-proxy');
+var blogProxy = httpProxy.createProxyServer({});
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -55,6 +57,11 @@ app.get('/story', function(req, res) {
 let palestine_data = require('./views/data/palestine.json')
 app.get('/palestine', function(req, res) {
     res.render('pages/palestine', {palestine_data: palestine_data, branding_data: branding_data});
+});
+
+// Route /papers* to Ghost
+app.get("/papers*", function(req, res, next){ 
+    blogProxy.web(req, res, { target: 'https://localhost:2368' });
 });
 
 // contracts congratulations page

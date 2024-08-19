@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Blue-Shark-Friends/bluesharkfriends.com#readme",
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "http-proxy": "^1.18.1"
   }
 }
