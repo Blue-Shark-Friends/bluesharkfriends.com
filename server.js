@@ -90,6 +90,9 @@ app.get("/contracts/step1/basic" , (req,res) => {
 app.get("/contracts/step1/alt-basic" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/FqAbUqogbZkjwiwZTiT1m");
 });
+app.get("/contracts/step1/flaming" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/VQTvT3m_0_5xtnPUu4M6h");
+});
 app.get("/contracts/step2" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/maWFi-0zb300zg73FYmtq");
 });
@@ -107,6 +110,9 @@ app.get("/contracts/step2/basic" , (req,res) => {
 });
 app.get("/contracts/step2/alt-basic" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/-wxclKTRLg8YlR--o-518");
+});
+app.get("/contracts/step2/flaming" , (req,res) => {
+	res.redirect(301, "https://app.documenso.com/d/OITlouO7jfAPOhcj4Cjrn");
 });
 app.get("/contracts/step3" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/JRHgiGbF-OoZD5cMqtCWD");
