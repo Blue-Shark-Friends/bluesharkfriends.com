@@ -64,6 +64,11 @@ app.get("/papers*", function(req, res, next){
     blogProxy.web(req, res, { target: 'https://localhost:2368' });
 });
 
+// shiver cycle page
+app.get("/shiver-cycle" , (req,res) => {
+	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/wNCJ9WCEdTCdqCi");
+});
+
 // contracts congratulations page
 let contractCongrats_data = require('./views/data/contracts_congratulations.json')
 app.get('/contracts/congratulations', function(req, res) {
