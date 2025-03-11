@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:shiver_data.title, description:shiver_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/menu', {title:shiver_data.title}) %>
+
+<div class="content">
+    <%- include('../partials/header', {title:shiver_data.title, subheading: 'Our Shiver'}) %>
+    
+    <div class="crew-banner">
+    <ul>
+    <% shiver_data.people.forEach(member => { %>
+        <li><% if (member.avatar_ref === "") { %><% } else { %><img src="<%= member.avatar_ref %>" width="50px" height="50px" style="<% if (member.name === 'Juniper Lusby') { %>object-position: 0px -15px;<% } %>" /><% } %><span><% if(member.link_ref === "") { %><%= member.name %><% } else { %><a href="<%= member.link_ref %>"><%= member.name %></a><% } %><br /><i><%= member.role %></i></span></li>
+    <% }); %>
+    </ul>
+    </div>
+    <br />
+</div>
+
+<%- include('../partials/footer') %>
+
+</body>
+</html>

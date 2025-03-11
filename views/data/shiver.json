@@ -1,0 +1,171 @@
+{
+    "title": "Our Shiver",
+    "description": "Blue Shark Friends community shiver crew",
+    "people":
+    [
+        {
+            "name": "Hannah Parker",
+            "link_ref": "https://hannahtransmom.bluesharkfriends.com",
+            "role": "Pirate",
+            "avatar_ref": "images/hannah.jpg"
+        },
+        {
+            "name": "Josie Stewart",
+            "link_ref": "https://called2voyage.bluesharkfriends.com",
+            "role": "Pirate",
+            "avatar_ref": "images/josie.jpg"
+        },
+        {
+            "name": "Kirstyn Piper Plummer",
+            "link_ref": "",
+            "role": "Deckhand",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Juniper Lusby",
+            "link_ref": "https://juniperlusby.bluesharkfriends.com",
+            "role": "Deckhand",
+            "avatar_ref": "https://juniperlusby.bluesharkfriends.com/images/Juniper.jpg"
+        },
+        {
+            "name": "Sage Myers",
+            "link_ref": "https://sagemyers.bluesharkfriends.com",
+            "role": "Deckhand",
+            "avatar_ref": "https://sagemyers.bluesharkfriends.com/images/sage.jpg"
+        },
+        {
+            "name": "Rachel McCauley Wylie",
+            "link_ref": "",
+            "role": "Deckhand",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Angel H.",
+            "link_ref": "",
+            "role": "Deckhand",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Cara Lynn Carter",
+            "link_ref": "https://caralynncarter.bluesharkfriends.com",
+            "role": "Crewmate",
+            "avatar_ref": "https://caralynncarter.bluesharkfriends.com/images/cara.jpeg"
+        },
+        {
+            "name": "Fred Beck",
+            "link_ref": "https://fredbeck.bluesharkfriends.com",
+            "role": "Crewmate",
+            "avatar_ref": "https://fredbeck.bluesharkfriends.com/images/fred.jpg"
+        },
+        {
+            "name": "Kels Leigh",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Jimmy Sellars",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Maya Wylie",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Jess Saffa",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Rocky Lane",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Johanna Armstrong",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Emily Richardson",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Rowan Stone",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Levi Jupiter Niederaurer",
+            "link_ref": "https://jupiter.bluesharkfriends.com",
+            "role": "Crewmate",
+            "avatar_ref": "https://jupiter.bluesharkfriends.com/images/Screenshot_20240821_125329_Photos.jpg"
+        },
+        {
+            "name": "Kaitlin Shetler",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Alyssa Crowe",
+            "link_ref": "",
+            "_link_comment": "https://alyssa-crowe.bluesharkfriends.com",
+            "role": "Crewmate",
+            "avatar_ref": "",
+            "_avatar_comment": "https://alyssa-crowe.bluesharkfriends.com/images/2024-09-06%2018.14.38.jpg"
+        },
+        {
+            "name": "Alice Baker",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Melony Thalia",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "River Bailey",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Serena Sonoma",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Parker Schulze",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Jessica Sellars",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Aimee Plummer",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        }
+    ]
+}

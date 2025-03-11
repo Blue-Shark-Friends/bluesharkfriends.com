@@ -47,6 +47,12 @@ app.get('/contact', function(req, res) {
     res.render('pages/contact', {contact_data: contact_data, branding_data: branding_data});
 });
 
+// shiver page
+let shiver_data = require('./views/data/shiver.json')
+app.get('/shiver', function(req, res) {
+	res.render('pages/shiver', {shiver_data: shiver_data, branding_data: branding_data});
+});
+
 // story page
 let story_data = require('./views/data/story.json')
 app.get('/story', function(req, res) {

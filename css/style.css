@@ -331,6 +331,36 @@ p.inline {
 	margin-bottom: 10px;
 }	
 
+.crew-banner {
+  background-color: white;
+  border-radius: 2px;
+}
+
+.crew-banner ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.crew-banner li {
+  background-color: #0C0C40;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 2px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.crew-banner li img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0px 0px;
+  margin: 5px;
+}
+
 @media screen and (min-width: 800px) {
   #header-img {
     width: 25%;
