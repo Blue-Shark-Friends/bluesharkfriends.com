@@ -119,11 +119,9 @@
         },
         {
             "name": "Alyssa Crowe",
-            "link_ref": "",
-            "_link_comment": "https://alyssa-crowe.bluesharkfriends.com",
+            "link_ref": "https://alyssa-crowe.bluesharkfriends.com",
             "role": "Crewmate",
-            "avatar_ref": "",
-            "_avatar_comment": "https://alyssa-crowe.bluesharkfriends.com/images/2024-09-06%2018.14.38.jpg"
+            "avatar_ref": "https://alyssa-crowe.bluesharkfriends.com/images/2024-09-06%2018.14.38.jpg"
         },
         {
             "name": "Alice Baker",
