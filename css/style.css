@@ -306,6 +306,22 @@ p.inline {
   font-size: small;
 }
 
+.invite {
+  margin-top: -80px;
+}
+
+#cabinWarmingImg {
+  width: 500px;
+  margin-top: 25px;
+}
+
+#inviteButton {
+	font-size: x-large;
+    padding: 5px 10px;
+    border-radius: 10px;
+	border-color: #42A1BD;
+}
+
 .congrats {
 	font-family: "Impact";
 	font-size: 30pt;
@@ -388,4 +404,11 @@ p.inline {
     width: 90%;
   }
   
+  #cabinWarmingImg {
+    width: 300px;
+  }
+
+  .invite {
+    margin-top: -50px;
+  }
 }

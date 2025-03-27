@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:invite_data.title, description:invite_data.description}) %>
+  <script type="text/javascript" src="/js/invite.js"></script>
+</head>
+<body>
+  <%- include('../partials/menu', {title:invite_data.title}) %>
+
+<div class="content">
+  <%- include('../partials/header', {notitle:1}) %>
+
+  <img id="cabinWarmingImg" src="images/cabin-warming.png" />
+
+  <div class="invite">
+      <div>
+		  <div class="inviteText">
+			<p>Click the button below to join the <span id = 'host'></span> digital community.</p>
+		  </div>
+		  <br />
+		  <button id = 'inviteButton' onClick="TakeUserToCommunity(urlp['ref']);">
+			  Join Community
+          </button>
+	  </div>
+  </div>
+  <script>
+	LoadInvitePage();
+  </script>
+<br /><br />
+</div>
+
+<%- include('../partials/footer') %>
+
+</body>
+</html>

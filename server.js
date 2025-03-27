@@ -75,6 +75,12 @@ app.get("/shiver-cycle" , (req,res) => {
 	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/wNCJ9WCEdTCdqCi");
 });
 
+// invite page
+let invite_data = require('./views/data/invite.json')
+app.get('/invite', function(req, res) {
+	res.render('pages/invite', {invite_data: invite_data, branding_data: branding_data});
+});
+
 // contracts congratulations page
 let contractCongrats_data = require('./views/data/contracts_congratulations.json')
 app.get('/contracts/congratulations', function(req, res) {

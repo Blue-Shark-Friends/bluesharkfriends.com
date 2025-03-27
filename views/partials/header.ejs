@@ -1,4 +1,7 @@
 <a href="/"><img id="logo" src="/images/logo.png" alt="Blue Shark Friends Logo - two friendly looking cartoon sharks facing inward, flanking an old fashioned ship's wheel" width="50px" /></a>
+<% var hide_title = typeof notitle != 'undefined' ? notitle : 0 %>
+<% if(hide_title) { %><% } else { %>
 <h1><%= branding_data.full_site_name %></h1>
 <% var page = typeof title != 'undefined' ? title : 'Untitled' %>
 <% if(page === "Home") { %><% } else { %><h2 style="<% if(page === "About") { %>margin-top: 0;<% } %>"><%= typeof subheading != 'undefined' ? subheading : 'Untitled' %></h2><% } %>
+<% } %>
