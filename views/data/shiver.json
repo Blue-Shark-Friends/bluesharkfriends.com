@@ -16,6 +16,12 @@
             "avatar_ref": "images/josie.jpg"
         },
         {
+            "name": "Fred Beck",
+            "link_ref": "https://fredbeck.bluesharkfriends.com",
+            "role": "Deckhand",
+            "avatar_ref": "https://fredbeck.bluesharkfriends.com/images/fred.jpg"
+        },
+        {
             "name": "Kirstyn Piper Plummer",
             "link_ref": "",
             "role": "Deckhand",
@@ -50,12 +56,6 @@
             "link_ref": "https://caralynncarter.bluesharkfriends.com",
             "role": "Crewmate",
             "avatar_ref": "https://caralynncarter.bluesharkfriends.com/images/cara.jpeg"
-        },
-        {
-            "name": "Fred Beck",
-            "link_ref": "https://fredbeck.bluesharkfriends.com",
-            "role": "Crewmate",
-            "avatar_ref": "https://fredbeck.bluesharkfriends.com/images/fred.jpg"
         },
         {
             "name": "Kels Leigh",
@@ -164,6 +164,14 @@
             "link_ref": "",
             "role": "Crewmate",
             "avatar_ref": ""
+        }
+    ],
+    "partners":
+    [
+        {
+            "name": "Out Front Magazine",
+            "link_ref": "https://www.outfrontmagazine.com/",
+            "logo_ref": "ofm-logo.png"
         }
     ]
 }

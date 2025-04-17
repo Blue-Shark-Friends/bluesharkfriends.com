@@ -16,6 +16,14 @@
     <% }); %>
     </ul>
     </div>
+    <div class="partners">
+      <h2>Partners</h2>
+      <% shiver_data.partners.forEach(member => { %>
+        <div class="cardlink partner-card">
+          <a class="linkspan" href="<%= member.link_ref %>"></a><img src="images/<%= member.logo_ref %>" alt="<%= member.name %>" width="200px" />
+        </div>
+      <% }); %>
+    </div>
     <br />
 </div>
 
