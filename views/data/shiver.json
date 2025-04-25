@@ -16,6 +16,12 @@
             "avatar_ref": "images/josie.jpg"
         },
         {
+            "name": "Cara Lynn Carter",
+            "link_ref": "https://caralynncarter.bluesharkfriends.com",
+            "role": "Deckhand",
+            "avatar_ref": "https://caralynncarter.bluesharkfriends.com/images/cara.jpeg"
+        },
+        {
             "name": "Fred Beck",
             "link_ref": "https://fredbeck.bluesharkfriends.com",
             "role": "Deckhand",
@@ -50,12 +56,6 @@
             "link_ref": "https://angel.bluesharkfriends.com/",
             "role": "Deckhand",
             "avatar_ref": "https://angel.bluesharkfriends.com/images/angel.jpeg"
-        },
-        {
-            "name": "Cara Lynn Carter",
-            "link_ref": "https://caralynncarter.bluesharkfriends.com",
-            "role": "Crewmate",
-            "avatar_ref": "https://caralynncarter.bluesharkfriends.com/images/cara.jpeg"
         },
         {
             "name": "Kels Leigh",
