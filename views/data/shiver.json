@@ -58,6 +58,12 @@
             "avatar_ref": "https://angel.bluesharkfriends.com/images/angel.jpeg"
         },
         {
+            "name": "Jess Saffa",
+            "link_ref": "",
+            "role": "Deckhand",
+            "avatar_ref": ""
+        },
+        {
             "name": "Kels Leigh",
             "link_ref": "",
             "role": "Crewmate",
@@ -71,12 +77,6 @@
         },
         {
             "name": "Maya Wylie",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
-            "name": "Jess Saffa",
             "link_ref": "",
             "role": "Crewmate",
             "avatar_ref": ""
