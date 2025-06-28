@@ -59,6 +59,12 @@ app.get('/story', function(req, res) {
     res.render('pages/story', {story_data: story_data, branding_data: branding_data});
 });
 
+// kickstarter page
+let kickstarter_data = require('./views/data/kickstarter.json')
+app.get('/kickstarter', function(req, res) {
+    res.render('pages/kickstarter', {kickstarter_data: kickstarter_data, branding_data: branding_data});
+});
+
 // palestine page
 let palestine_data = require('./views/data/palestine.json')
 app.get('/palestine', function(req, res) {

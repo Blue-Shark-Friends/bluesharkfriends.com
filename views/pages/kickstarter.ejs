@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:kickstarter_data.title, description:kickstarter_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/menu', {title:kickstarter_data.title}) %>
+
+<div class="content">
+  <%- include('../partials/header', {title:kickstarter_data.title, subheading: 'Kickstarter'}) %>
+
+  <p>Our fundraiser is currently pending review by Kickstarter. When it goes live, this page will redirect there.</p>
+
+</div>
+
+<%- include('../partials/footer') %>
+
+</body>
+</html>
