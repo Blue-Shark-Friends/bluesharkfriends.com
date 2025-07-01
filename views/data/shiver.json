@@ -29,9 +29,9 @@
         },
         {
             "name": "Kirstyn Piper Plummer",
-            "link_ref": "",
+            "link_ref": "https://kirstynplummer.bluesharkfriends.com/",
             "role": "Deckhand",
-            "avatar_ref": ""
+            "avatar_ref": "https://kirstynplummer.bluesharkfriends.com/images/kirstyn.jpg"
         },
         {
             "name": "Juniper Lusby",
@@ -47,9 +47,9 @@
         },
         {
             "name": "Rachel McCauley Wylie",
-            "link_ref": "",
+            "link_ref": "https://rachelmccauley.bluesharkfriends.com/",
             "role": "Deckhand",
-            "avatar_ref": ""
+            "avatar_ref": "https://rachelmccauley.bluesharkfriends.com/images/rachel.jpg"
         },
         {
             "name": "Angel H.",
@@ -59,9 +59,9 @@
         },
         {
             "name": "Jess Saffa",
-            "link_ref": "",
+            "link_ref": "https://jessaffa.bluesharkfriends.com/",
             "role": "Deckhand",
-            "avatar_ref": ""
+            "avatar_ref": "https://jessaffa.bluesharkfriends.com/images/jess.jpeg"
         },
         {
             "name": "Kels Leigh",
@@ -172,6 +172,11 @@
             "name": "Out Front Magazine",
             "link_ref": "https://www.outfrontmagazine.com/",
             "logo_ref": "ofm-logo.png"
+        },
+        {
+            "name": "CRIT Lab",
+            "link_ref": "https://oliverhaimson.com/team.html",
+            "logo_ref": "crit-lab-logo.png"
         }
     ]
 }
