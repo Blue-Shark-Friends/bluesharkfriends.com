@@ -64,12 +64,6 @@
             "avatar_ref": "https://jessaffa.bluesharkfriends.com/images/jess.jpeg"
         },
         {
-            "name": "Kels Leigh",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
             "name": "Jimmy Sellars",
             "link_ref": "",
             "role": "Crewmate",
@@ -88,18 +82,6 @@
             "avatar_ref": ""
         },
         {
-            "name": "Johanna Armstrong",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
-            "name": "Emily Richardson",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
             "name": "Rowan Stone",
             "link_ref": "",
             "role": "Crewmate",
@@ -110,12 +92,6 @@
             "link_ref": "https://jupiter.bluesharkfriends.com",
             "role": "Crewmate",
             "avatar_ref": "https://jupiter.bluesharkfriends.com/images/Screenshot_20240821_125329_Photos.jpg"
-        },
-        {
-            "name": "Kaitlin Shetler",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
         },
         {
             "name": "Alyssa Crowe",
@@ -136,33 +112,57 @@
             "avatar_ref": ""
         },
         {
+            "name": "Kels Leigh",
+            "link_ref": "",
+            "role": "Recruit",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Johanna Armstrong",
+            "link_ref": "",
+            "role": "Recruit",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Emily Richardson",
+            "link_ref": "",
+            "role": "Recruit",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Kaitlin Shetler",
+            "link_ref": "",
+            "role": "Recruit",
+            "avatar_ref": ""
+        },
+        {
             "name": "River Bailey",
             "link_ref": "",
-            "role": "Crewmate",
+            "role": "Recruit",
             "avatar_ref": ""
         },
         {
             "name": "Serena Sonoma",
             "link_ref": "",
-            "role": "Crewmate",
+            "role": "Recruit",
             "avatar_ref": ""
         },
         {
             "name": "Parker Schulze",
             "link_ref": "",
-            "role": "Crewmate",
+            "role": "Recruit",
             "avatar_ref": ""
         },
         {
             "name": "Jessica Sellars",
             "link_ref": "",
-            "role": "Crewmate",
+            "role": "Recruit",
             "avatar_ref": ""
         },
         {
             "name": "Aimee Plummer",
             "link_ref": "",
-            "role": "Crewmate",
+            "role": "Recruit",
             "avatar_ref": ""
         }
     ],
