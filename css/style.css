@@ -38,6 +38,13 @@ body {
   top: 8px;
 }
 
+.socialbox {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+}
+
 #consultation {
 	font-size: large;
     padding: 5px 10px;
@@ -463,4 +470,5 @@ p.inline {
   width: 90%;
   padding: 8px;
   }
+
 }
