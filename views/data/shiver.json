@@ -112,6 +112,12 @@
             "avatar_ref": ""
         },
         {
+            "name": "Emily Richardson",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
             "name": "Kels Leigh",
             "link_ref": "",
             "role": "Recruit",
@@ -119,12 +125,6 @@
         },
         {
             "name": "Johanna Armstrong",
-            "link_ref": "",
-            "role": "Recruit",
-            "avatar_ref": ""
-        },
-        {
-            "name": "Emily Richardson",
             "link_ref": "",
             "role": "Recruit",
             "avatar_ref": ""
