@@ -62,7 +62,7 @@ app.get('/story', function(req, res) {
 // kickstarter page
 let kickstarter_data = require('./views/data/kickstarter.json')
 app.get('/kickstarter', function(req, res) {
-    res.render('pages/kickstarter', {kickstarter_data: kickstarter_data, branding_data: branding_data});
+    res.redirect(301, "https://www.kickstarter.com/projects/bluesharkfriends/shiver-dock-a-community-web-page-engine-community-bazaar");
 });
 
 // palestine page
