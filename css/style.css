@@ -460,6 +460,7 @@ p.inline {
   
   #powerdynamics {
 	  float: left;
+	  clear: left;
   }
   .featurebox {
     flex-wrap: wrap;

@@ -150,10 +150,5 @@ app.get("/contracts/step6" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/9UhTYdeF_XZESLqNzKuIs");
 });
 
-/*DEBUG*/
-app.listen(9000);
+app.listen(9000, "169.197.80.52");
 console.log('Server is listening on port 9000');
-
-/*PROD*/
-//app.listen(9000, "169.197.80.52");
-//console.log('Server is listening on port 9000');
