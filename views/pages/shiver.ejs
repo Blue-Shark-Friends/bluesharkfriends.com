@@ -8,7 +8,16 @@
 
 <div class="content">
     <%- include('../partials/header', {title:shiver_data.title, subheading: 'Our Shiver'}) %>
-    
+    <div>
+		<div style="float: left">
+			See our <a href="https://shiverguide.info/methodology">Community Strategy</a>
+		</div>
+		<div id="powerdynamics">
+			See our <a href="https://shiverguide.info/powerdynamics">Power Dynamics</a>
+		</div>
+	</div>
+	<br />
+	<br />
     <div class="crew-banner">
     <ul>
     <% shiver_data.people.forEach(member => { %>
@@ -17,7 +26,7 @@
     </ul>
     </div>
     <div class="partners">
-      <h2>Partners</h2>
+      <h2>Our Partners</h2>
       <% shiver_data.partners.forEach(member => { %>
         <div class="cardlink partner-card">
           <a class="linkspan" href="<%= member.link_ref %>"></a><img src="images/<%= member.logo_ref %>" alt="<%= member.name %>" width="200px" />
@@ -25,6 +34,49 @@
       <% }); %>
     </div>
     <br />
+	<h2>Our Community</h2>
+    <div class="featurebox">
+		<div>
+			<h3>Friends</h3>
+			<p>
+				<p>Friends are members of one of our curated communities.</p>
+				<br />
+				<p>If you would like to become a part of one of these communities, you must have a personal relationship with and be approved by a member of our shiver.</p>
+				<br />
+				<p>Please feel free to request access to one of the communities below:</p>
+				<br />
+				<div class="socialbox">
+					<a href="https://www.facebook.com/share/g/1CPPGnnCkp/" style="margin-top: 10px; margin-bottom: 10px">
+					  <img src="images/Facebook_Logo_Primary.png" width="50px" />
+					</a>
+					<a href="https://discord.gg/7QVfZ5bbN8" style="margin-top: 10px; margin-bottom: 10px">
+					  <img src="images/Discord-Symbol-Blurple.png" width="50px" />
+					</a>
+				</div>
+				<br />
+				<!--discord and facebook-->
+				<p>If you would like to have a link to your personal site listed below, please click <a href="https://home.bluesharkfriends.com/index.php/apps/forms/s/MKXiRcqMKQxjam9nC7pwsQxE">here</a> to request access.</p>
+			</p>
+		</div>
+		<div>
+			<h3>Comrades</h3>
+			<p>
+				<p>Comrades are any person or organization who feels aligned with the work we are doing.</p>
+				<br />
+				<p>If you would like to have a link to your personal site listed below and/or sign up for updates from us, please click <a href="https://home.bluesharkfriends.com/index.php/apps/forms/s/MKXiRcqMKQxjam9nC7pwsQxE">here</a> to request access.</p>
+			</p>
+		</div>
+		<div>
+			<h3>Supporters</h3>
+			<p>
+				<p>Supporters are any person or organization who has provided members of our community material support.</p>
+				<br />
+				<p>Some supporters are nominated by crew members for their charity that has kept our crerw afloat.</p>
+				<br />
+				<p>But any person or organization can become a supporter by donating to a community member on our <a href="https://bluesharkfriends.com/needs">Needs</a> page and submitting proof of the transaction <a href="https://home.bluesharkfriends.com/index.php/s/7XwSxQEKB4zk4HY">here</a>.</p>
+			</p>
+		</div>
+	</div>
 </div>
 
 <%- include('../partials/footer') %>

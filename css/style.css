@@ -38,6 +38,14 @@ body {
   top: 8px;
 }
 
+.socialbox {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
 #consultation {
 	font-size: large;
     padding: 5px 10px;
@@ -389,6 +397,29 @@ p.inline {
   box-shadow: 5px 10px #212543;
 }
 
+.featurebox {
+  display: flex;
+  margin: auto;
+  align-items: top;
+  gap: 15px;
+  padding-left: 9%;
+  padding-right: 9%;
+  margin-left: -50%;
+  margin-right: -50%;
+}
+
+.featurebox div {
+  width: 30%;
+  padding: 10px;
+  text-align: left;
+}
+
+.content .featurebox p {
+  width: auto;
+  text-wrap: wrap;
+  text-align: left;
+}
+
 @media screen and (min-width: 800px) {
   #header-img {
     width: 25%;
@@ -397,6 +428,10 @@ p.inline {
 
   .content {
     width: 50%;
+  }
+  
+  #powerdynamics {
+	float: right;
   }
 }
 
@@ -423,4 +458,19 @@ p.inline {
   .invite {
     margin-top: -50px;
   }
+  
+  #powerdynamics {
+	  float: left;
+	  clear: left;
+  }
+  .featurebox {
+    flex-wrap: wrap;
+	margin-left: 0;
+	margin-right: 0;
+  }
+  .featurebox div {
+  width: 90%;
+  padding: 8px;
+  }
+
 }
