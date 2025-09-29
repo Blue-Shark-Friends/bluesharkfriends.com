@@ -20,22 +20,23 @@ body {
   min-height: 97vh;
   display: flex;
   flex-direction: column;
+  margin-top: 0px;
 }
 
 #logo {
-  position: absolute;
+  position: fixed;
   left: 70px;
-  top: 13px;
+  top: 8px;
+  z-index: 1001;
 }
 
 #freepalestine {
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .donate {
-  position: absolute;
-  right: 8px;
-  top: 8px;
+  margin-top: 30px;
 }
 
 .socialbox {
@@ -97,6 +98,7 @@ footer {
 
 .content {
   margin:0 auto;
+  margin-top: 3.1em;
   text-align: center;
 }
 
@@ -229,9 +231,54 @@ p.inline {
   text-align: center;
 }
 
+.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3.1em;
+  background-color: #30303C;
+  border-bottom: 2px solid black;
+  z-index: 1000;
+}
+
+.topbar .tabs {
+  margin: 0 auto;
+  margin-top: 0.75em;
+  height: 1em;
+  background-color: #424251;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.topbar .tabs a {
+  text-wrap: nowrap;
+}
+
+.topbar .login {
+  float: right;
+  margin: 0 auto;
+  margin-top: -1.4em;
+  margin-right: 10px;
+}
+
 .menu-icon {
+  position: fixed;
   font-size: 2em;
   margin-left: 12px;
+  margin-top: 0.1em;
+  width: fit-content;
+  z-index: 1001;
 }
 
 .menu-icon a {
@@ -254,6 +301,11 @@ p.inline {
   padding-right: 20px;
   height: 100%;
   visibility: hidden;
+  background-color: #30303C;
+  border-right: 5px double black;
+  box-shadow: 1px 0px 5px black;
+  clip-path: inset(0 -5px 0 0);
+  z-index: 1000;
 }
 
 .script-text {
@@ -433,6 +485,10 @@ p.inline {
   #powerdynamics {
 	float: right;
   }
+
+  .topbar .tabs {
+    width: 60%;
+  }
 }
 
 @media screen
@@ -473,4 +529,8 @@ p.inline {
   padding: 8px;
   }
 
+  .topbar .tabs {
+    width: 30%;
+    gap: 5px;
+  }
 }

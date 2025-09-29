@@ -4,7 +4,7 @@
   <%- include('../partials/head', {title:index_data.title, description:index_data.description}) %>
 </head>
 <body>
-<%- include('../partials/menu', {title:index_data.title}) %>
+<%- include('../partials/topbar', {title:index_data.title}) %>
 
 <div class="content">
   <%- include('../partials/header', {title:index_data.title}) %>
@@ -22,15 +22,15 @@
 
 <button id="consultation" onclick="location.href='https://app.cal.com/bluesharkfriends/consult';">Schedule a chat</button>
 
+<p style="margin-top: 30px">Please check out our community <a href="needs">needs</a>!</p>
+
 <div class="donate">
   <form action="https://www.paypal.com/donate" method="post" target="_top">
     <input type="hidden" name="hosted_button_id" value="28LGN9M5W24DC" />
-    <input type="image" src="images/donate.png" width="100px" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    <input type="image" src="images/img_paypal-button.png" width="200px" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
     <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
   </form>
-</div>  
-
-<p style="margin-top: 50px">Please check out our community <a href="needs">needs</a>!</p>
+</div>
 
 <div id="freepalestine"><a href="palestine"><img src="images/Free_Palestine.svg" width="500px" height="175px" /></a></div>
 

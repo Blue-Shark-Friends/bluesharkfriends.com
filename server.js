@@ -1,3 +1,4 @@
+var process = require('process');
 var express = require('express');
 var app = express();
 var httpProxy = require('http-proxy');
@@ -150,5 +151,11 @@ app.get("/contracts/step6" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/9UhTYdeF_XZESLqNzKuIs");
 });
 
-app.listen(9000, "169.197.80.52");
-console.log('Server is listening on port 9000');
+if (process.env.NODE_ENV == 'production') {
+	app.listen(9000, "169.197.80.52");
+	console.log('[PROD] Server is listening on 169.197.80.52:9000');
+}
+else {
+	app.listen(9000);
+	console.log('[DEV] Server is listening on port 9000');	
+}
