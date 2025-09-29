@@ -158,6 +158,9 @@ app.get("/termsofservice" , (req,res) => {
 app.get("/privacypolicy" , (req,res) => {
 	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/ajkKZYnNMALSRKA");
 });
+app.get("/trademarkpolicy" , (req,res) => {
+	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/TfyHqqaR9X7AGgW");
+});
 
 if (process.env.NODE_ENV == 'production') {
 	app.listen(9000, "169.197.80.52");
