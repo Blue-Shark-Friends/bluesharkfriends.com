@@ -44,7 +44,7 @@ app.get('/needs', function(req, res) {
 
 // contact page
 let contact_data = require('./views/data/contact.json')
-app.get('/contact', function(req, res) {
+app.get('/connect', function(req, res) {
     res.render('pages/contact', {contact_data: contact_data, branding_data: branding_data});
 });
 
@@ -151,6 +151,9 @@ app.get("/contracts/step6" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/9UhTYdeF_XZESLqNzKuIs");
 });
 
+app.get('/contact', function(req, res) {
+    res.redirect(301, "/connect");
+});
 
 app.get("/termsofservice" , (req,res) => {
 	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/2yZiAspL3PYK5Bb");

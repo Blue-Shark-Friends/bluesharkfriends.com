@@ -7,15 +7,20 @@
   <%- include('../partials/topbar', {title:contact_data.title}) %>
 
 <div class="content">
-  <%- include('../partials/header', {title:contact_data.title, subheading: 'Contact'}) %>
+  <%- include('../partials/header', {title:contact_data.title, subheading: 'Connect'}) %>
 
-<p>
-  Email us at <a href="mailto:info@bluesharkfriends.com">info@bluesharkfriends.com</a>
-  <br /> or get in touch at one of our socials below!
-</p>
-
-<h2>Social Links</h2>
+<h3>Get to Know Us</h3>
 <div class="socialbox">
+	<a href="<%= branding_data.mail %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/mail.png" width="50px" style="height: 50px; object-fit: cover; object-position: center 4px; background-color: white; border-radius: 50%" />
+	</a>
+	<a href="<%= branding_data.cal %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/Cal logo.avif" width="50px" style="border-radius: 50%" />
+	</a>
+</div>
+
+<h3>Follow us on Socials</h3>
+<div class="socialbox" style="flex-wrap: wrap">
 	<a href="<%= branding_data.facebook %>" style="margin-top: 10px; margin-bottom: 10px">
 	  <img src="images/Facebook_Logo_Primary.png" width="50px" />
 	</a>
@@ -28,8 +33,49 @@
 	<a href="<%= branding_data.instagram %>" style="margin-top: 10px; margin-bottom: 10px">
 	  <img src="images/Instagram_Glyph_Gradient.png" width="50px" />
 	</a>
+	<a href="<%= branding_data.substack %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/substack.png" width="50px" />
+	</a>
+	<a href="<%= branding_data.tiktok %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/TikTok_Icon_Black_Circle.png" width="50px" />
+	</a>
+	<a href="<%= branding_data.youtube %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/yt_logo_rgb_light.png" width="50px" />
+	</a>
+	<a href="<%= branding_data.bluesky %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/bluesky_media_kit_logo_transparent_1.png" width="50px" />
+	</a>
+	<a href="<%= branding_data.kickstarter %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/kickstarter_logo.avif" width="50px" style="height: 50px; object-fit:contain" />
+	</a>
 </div>
 
+<h3>Join a Collaboration Space</h3>
+<div class="socialbox">
+	<a href="<%= branding_data.facebook_group %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/Facebook_Logo_Primary.png" width="50px" />
+	</a>
+	<a href="<%= branding_data.discord_group %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/Discord-Symbol-Blurple.png" width="50px" />
+	</a>
+</div>
+
+<h3>Apply to Become a Member</h3>
+<div class="socialbox">
+	<a href="<%= branding_data.bluesharkfriends_apply %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/logo.png" width="50px" />
+	</a>
+</div>
+
+<h3>Join a Coalition</h3>
+<div class="socialbox">
+	<a href="<%= branding_data.everythingisqueer_coalition %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/everywhereisqueer.webp" width="50px" style="height: 50px; object-fit: contain" />
+	</a>
+	<a href="<%= branding_data.shivernet_coalition %>" style="margin-top: 10px; margin-bottom: 10px">
+	  <img src="images/shivernet.png" width="50px" style="height: 50px; object-fit: contain" />
+	</a>
+</div>
 </div>
 
 <%- include('../partials/footer') %>
