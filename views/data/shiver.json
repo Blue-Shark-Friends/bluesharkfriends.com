@@ -65,27 +65,15 @@
         },
         {
             "name": "Jimmy Sellars",
-            "link_ref": "",
+            "link_ref": "https://jimmysellars.bluesharkfriends.com/",
             "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
-            "name": "Maya Wylie",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
+            "avatar_ref": "https://jimmysellars.bluesharkfriends.com/images/jimmy.jpeg"
         },
         {
             "name": "Rocky Lane",
-            "link_ref": "",
+            "link_ref": "https://rockylane.bluesharkfriends.com/",
             "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
-            "name": "Rowan Stone",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
+            "avatar_ref": "https://rockylane.bluesharkfriends.com/images/rocky.jpg"
         },
         {
             "name": "Levi Jupiter Niederaurer",
@@ -98,6 +86,18 @@
             "link_ref": "https://alyssa-crowe.bluesharkfriends.com",
             "role": "Crewmate",
             "avatar_ref": "https://alyssa-crowe.bluesharkfriends.com/images/2024-09-06%2018.14.38.jpg"
+        },
+        {
+            "name": "Maya Wylie",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
+        },
+        {
+            "name": "Rowan Stone",
+            "link_ref": "",
+            "role": "Crewmate",
+            "avatar_ref": ""
         },
         {
             "name": "Alice Baker",
