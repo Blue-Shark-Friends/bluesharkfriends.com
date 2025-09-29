@@ -151,6 +151,14 @@ app.get("/contracts/step6" , (req,res) => {
 	res.redirect(301, "https://app.documenso.com/d/9UhTYdeF_XZESLqNzKuIs");
 });
 
+
+app.get("/termsofservice" , (req,res) => {
+	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/2yZiAspL3PYK5Bb");
+});
+app.get("/privacypolicy" , (req,res) => {
+	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/ajkKZYnNMALSRKA");
+});
+
 if (process.env.NODE_ENV == 'production') {
 	app.listen(9000, "169.197.80.52");
 	console.log('[PROD] Server is listening on 169.197.80.52:9000');
