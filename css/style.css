@@ -17,25 +17,27 @@ body {
   background-color: #0C0C40;
   font-family: "Trebuchet MS", sans-serif;
   color: white;
-  min-height: 97vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #logo {
-  position: absolute;
+  position: fixed;
   left: 70px;
-  top: 13px;
+  top: 8px;
+  z-index: 1001;
 }
 
 #freepalestine {
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .donate {
-  position: absolute;
-  right: 8px;
-  top: 8px;
+  margin-top: 30px;
 }
 
 .socialbox {
@@ -78,7 +80,8 @@ a:hover {
 
 footer {
   margin-top: auto;
-  text-align: right;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 #header-img {
@@ -97,6 +100,7 @@ footer {
 
 .content {
   margin:0 auto;
+  margin-top: 3.1em;
   text-align: center;
 }
 
@@ -229,9 +233,54 @@ p.inline {
   text-align: center;
 }
 
+.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3.1em;
+  background-color: #30303C;
+  border-bottom: 2px solid black;
+  z-index: 1000;
+}
+
+.topbar .tabs {
+  margin: 0 auto;
+  margin-top: 0.75em;
+  height: 1em;
+  background-color: #424251;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.topbar .tabs a {
+  text-wrap: nowrap;
+}
+
+.topbar .login {
+  float: right;
+  margin: 0 auto;
+  margin-top: -1.4em;
+  margin-right: 10px;
+}
+
 .menu-icon {
+  position: fixed;
   font-size: 2em;
   margin-left: 12px;
+  margin-top: 0.1em;
+  width: fit-content;
+  z-index: 1001;
 }
 
 .menu-icon a {
@@ -254,6 +303,11 @@ p.inline {
   padding-right: 20px;
   height: 100%;
   visibility: hidden;
+  background-color: #30303C;
+  border-right: 5px double black;
+  box-shadow: 1px 0px 5px black;
+  clip-path: inset(0 -5px 0 0);
+  z-index: 1000;
 }
 
 .script-text {
@@ -420,6 +474,61 @@ p.inline {
   text-align: left;
 }
 
+.kickstarter {
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 30px 0;
+  background-color: #0C0C40;
+  border: 2px solid #0C0C40;
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 1em #d6c9b3, inset -1px -1px 1em #d6c9b3;
+}
+
+.kickstarter-details {
+  margin: 0 auto;
+  width: 89%;
+  background-color: #314778;
+  border: 2px solid #0C0C40;
+  border-top: 0;
+  padding-top: 20px;
+}
+
+.kickstarter-details h4 {
+  margin-top: 0;
+}
+
+.flyers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.needs {
+  cursor: pointer;
+  margin-top: 30px;
+  background-image: url('/images/bsf-friends.jpg');
+  background-position: center -35px;
+  background-size: cover;
+  background-color: #0C0C40;
+  border: 2px solid #0C0C40;
+  border-radius: 20px;
+  height: 200px;
+  color: black;
+  position: relative;
+}
+
+.needs h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 @media screen and (min-width: 800px) {
   #header-img {
     width: 25%;
@@ -433,11 +542,19 @@ p.inline {
   #powerdynamics {
 	float: right;
   }
+
+  .topbar .tabs {
+    width: 60%;
+  }
 }
 
 @media screen
   and (min-width: 320px)
   and (max-width: 800px) {
+  body {
+    min-height: 100dvh;
+  }
+
   #header-img {
     width: 50%;
     height: 50%;
@@ -473,4 +590,8 @@ p.inline {
   padding: 8px;
   }
 
+  .topbar .tabs {
+    width: 30%;
+    gap: 5px;
+  }
 }

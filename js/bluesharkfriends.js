@@ -4,11 +4,11 @@ function showHideMenu()
         if (menu.style.visibility === "visible")
         {
         menu.style.visibility = "hidden";
-        document.getElementsByClassName("content")[0].style.paddingLeft = "0";
+        //document.getElementsByClassName("content")[0].style.paddingLeft = "0";
         }
         else
         {
         menu.style.visibility = "visible";
-        document.getElementsByClassName("content")[0].style.paddingLeft = "10em";
+        //document.getElementsByClassName("content")[0].style.paddingLeft = "10em";
         }
     }
