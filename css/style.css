@@ -451,6 +451,31 @@ p.inline {
   box-shadow: 5px 10px #212543;
 }
 
+.supporters ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.supporters li {
+  background-color: #424251;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 2px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.supporters li img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0px 0px;
+  margin: 5px;
+}
+
 .featurebox {
   display: flex;
   margin: auto;
