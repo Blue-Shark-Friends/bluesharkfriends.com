@@ -110,6 +110,10 @@ footer {
   margin: 0;
 }
 
+.kickstarter-page p {
+  margin-bottom: 1em;
+}
+
 .content > ul {
   display: inline-block;
   padding: 0;
@@ -584,6 +588,10 @@ p.grant i {
   .topbar .tabs {
     width: 60%;
   }
+
+  .kickstarter-page .needcard {
+    width: 350px;
+  }
 }
 
 @media screen
@@ -631,5 +639,9 @@ p.grant i {
   .topbar .tabs {
     width: 30%;
     gap: 5px;
+  }
+
+  .kickstarter-page .needcard {
+    width: 80%;
   }
 }

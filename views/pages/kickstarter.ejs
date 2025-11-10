@@ -2,15 +2,69 @@
 <html lang="en">
 <head>
   <%- include('../partials/head', {title:kickstarter_data.title, description:kickstarter_data.description}) %>
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAOqc4A8xfZb4tI7TybHIADGc6257_JnphOwqRlTgk2aZdhSQZiav75w-ffIw3uwOJjayjNDcfSAfBMUg&components=hosted-buttons&enable-funding=venmo&currency=USD">
+  </script>
 </head>
 <body>
   <%- include('../partials/topbar', {title:kickstarter_data.title}) %>
 
-<div class="content">
+<div class="content kickstarter-page">
   <%- include('../partials/header', {title:kickstarter_data.title, subheading: 'Kickstarter'}) %>
 
-  <p>Our fundraiser is currently pending review by Kickstarter. When it goes live, this page will redirect there.</p>
+  <p style="text-align: left">Our first <a href="https://www.kickstarter.com/projects/bluesharkfriends/shiver-dock-a-community-web-page-engine-community-bazaar">Kickstarter</a> has ended. We raised $729 in pledges, meaning our funding was unsuccessful, but our work will continue.</p>
+  
+  <p style="text-align: left">We learned a lot from this campaign and made a lot of great connections, but we could still use your support. We are offering our campaign rewards for sale here, so you haven't missed your chance to get one of these awesome works from our Community Bazaar!</p>
 
+  <div class="needcard" style="margin: 0 auto; text-align: center">
+    <img src="/images/shiver-zine.png" width="200px" />
+    <span style="text-align: left"><h3>Shiver zine (PDF)<br />FREE</h3></span>
+    <p>"Shiver: An Anti-Empire Community Building Method" by Cara Lynn Carter</p>
+    <button style="font-size: large" onclick="location.href='https://home.bluesharkfriends.com/index.php/s/J3LQ8fxXLjSg7b2';">Download</button>
+  </div>
+  <br />
+  <div id="paypal-container-PHALKM99ZAX48" class="needcard" style="margin: 0 auto"></div>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "PHALKM99ZAX48",
+    }).render("#paypal-container-PHALKM99ZAX48")
+  </script>
+  <br />
+  <div id="paypal-container-BYJUCWYBHM2DN" class="needcard" style="margin: 0 auto"></div>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "BYJUCWYBHM2DN",
+    }).render("#paypal-container-BYJUCWYBHM2DN")
+  </script>
+  <br />
+  <div id="paypal-container-ENU5PAZH2RB4L" class="needcard" style="margin: 0 auto"></div>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "ENU5PAZH2RB4L",
+    }).render("#paypal-container-ENU5PAZH2RB4L")
+  </script>
+  <br />
+  <div id="paypal-container-JLXR38UC2FAVJ" class="needcard" style="margin: 0 auto"></div>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "JLXR38UC2FAVJ",
+    }).render("#paypal-container-JLXR38UC2FAVJ")
+  </script>
+  <br />
+  <div id="paypal-container-7VLBC7W2BV7VW" class="needcard" style="margin: 0 auto"></div>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "7VLBC7W2BV7VW",
+    }).render("#paypal-container-7VLBC7W2BV7VW")
+  </script>
+  <br />
+  <div id="paypal-container-YUPQ2E9AYKJQN" class="needcard" style="margin: 0 auto"></div>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "YUPQ2E9AYKJQN",
+    }).render("#paypal-container-YUPQ2E9AYKJQN")
+  </script>
+  <br />
 </div>
 
 <%- include('../partials/footer') %>
