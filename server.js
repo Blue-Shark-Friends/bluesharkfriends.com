@@ -65,6 +65,9 @@ let kickstarter_data = require('./views/data/kickstarter.json')
 app.get('/kickstarter', function(req, res) {
     res.render('pages/kickstarter', {kickstarter_data: kickstarter_data, branding_data: branding_data});
 });
+app.get('/kickstarter', function(req, res) {
+	res.redirect(301, "/kickstarter");
+});
 
 // palestine page
 let palestine_data = require('./views/data/palestine.json')
