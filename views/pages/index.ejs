@@ -20,6 +20,31 @@
 
 <br />
 
+<script type="text/javascript">
+  function showHidePopOut()
+    {
+        var popout = document.getElementById("popout");
+        if (popout.style.right === "0px")
+        {
+          popout.style.right = "-13.5em";
+          popout.childNodes[1].firstChild.textContent = "≪";
+        }
+        else
+        {
+          popout.style.right = "0px";
+          popout.childNodes[1].firstChild.textContent = "≫";
+        }
+    }
+</script>
+
+<div id="popout" style="position:fixed;right:0;top:50%;z-index:1000;padding:10px;background-color:#222222;padding-left:1.7em;box-shadow: 0px 0px 5px 1px black;">
+  <div style="position:absolute;left:0;top:0;height:100%;padding:0 2px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid black"><a href="javascript:showHidePopOut()">&#8811;</a></div>
+  <a href="https://home.bluesharkfriends.com/index.php/s/br86x9k8PQZWpAa">
+    Slides from<br />The Shivernet Presentation
+  </a>
+  <p>@ <a href="https://anticapitalistsocialclub.com/">The Anti-Capitalist<br />Social Club</a></p>
+</div>
+
 <button id="consultation" onclick="location.href='https://app.cal.com/bluesharkfriends/consult';">Schedule a chat</button>
 
 <div class="kickstarter" onclick="location.href='/kickstarter'">
