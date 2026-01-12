@@ -85,6 +85,12 @@ app.get("/shiver-cycle" , (req,res) => {
 	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/wNCJ9WCEdTCdqCi");
 });
 
+// obituaries page
+let departeds_data = require('./views/data/departeds.json')
+app.get("/departeds", (req, res) => {
+	res.render(301, "pages/departeds");
+});
+
 // invite page
 let invite_data = require('./views/data/invite.json')
 app.get('/invite', function(req, res) {

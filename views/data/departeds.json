@@ -1,0 +1,13 @@
+{
+    "title": "Our Departed",
+    "description": "Loved Ones waiting for our community on the other side",
+    "people":
+    [
+        {
+            "name": "Elizabeth Casswell",
+            "link_ref": "https://bluesharkfriends.com/departeds/elizabethcasswell",
+            "role": "Friend",
+            "avatar_ref": "images/elizabethcasswell.jpg"
+        }
+	]
+}
