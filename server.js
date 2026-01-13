@@ -168,6 +168,13 @@ app.get("/trademarkpolicy" , (req,res) => {
 	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/TfyHqqaR9X7AGgW");
 });
 
+// hosted sites
+
+var elizabethcasswell_site = require('../departeds.elizabethcasswell/server.js');
+
+app.use('/departeds/elizabethcasswell/', express.static('../departeds.elizabethcasswell'));
+app.use('/departeds/elizabethcasswell/', elizabethcasswell_site);
+
 if (process.env.NODE_ENV == 'production') {
 	app.listen(9000, "169.197.80.52");
 	console.log('[PROD] Server is listening on 169.197.80.52:9000');
