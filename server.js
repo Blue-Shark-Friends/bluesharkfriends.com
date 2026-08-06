@@ -101,6 +101,18 @@ let invite_data = require('./views/data/invite.json')
 app.get('/invite', function(req, res) {
 	res.render('pages/invite', {invite_data: invite_data, branding_data: branding_data});
 });
+app.get('/invite/current_member', function(req, res) {
+	res.render('pages/invite_current_member', {invite_data: invite_data, branding_data: branding_data});
+});
+app.get('/invite/new_member', function(req, res) {
+	res.render('pages/invite_new_member', {invite_data: invite_data, branding_data: branding_data});
+});
+app.get('/invite/current_partner', function(req, res) {
+	res.render('pages/invite_current_partner', {invite_data: invite_data, branding_data: branding_data});
+});
+app.get('/invite/new_partner', function(req, res) {
+	res.render('pages/invite_new_partner', {invite_data: invite_data, branding_data: branding_data});
+});
 
 // contracts congratulations page
 let contractCongrats_data = require('./views/data/contracts_congratulations.json')
