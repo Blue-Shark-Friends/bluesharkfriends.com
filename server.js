@@ -4,70 +4,95 @@ var app = express();
 var httpProxy = require('http-proxy');
 var blogProxy = httpProxy.createProxyServer({});
 
+// check command argument
+var arg = process.argv[2];
+
+// Privacy Enum
+class Privacy {
+	static Public = new Privacy("public");
+	static Shiver = new Privacy("shiver");
+
+	constructor(name) {
+		this.name = name
+	}
+}
+
+// set privacy mode for site
+var privacy = Privacy.Public;
+if (arg == "shiver") {
+	privacy = Privacy.Shiver;
+}
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));
 
 // use res.render to load up an ejs view file
 
-let branding_data = require('./views/data/_branding.json')
+let branding_data = require(`./views/data/_branding.${privacy == Privacy.Shiver ? "shiver." : ""}json`);
 
 // index page
-let index_data = require('./views/data/index.json')
+let index_data = require(`./views/data/index.json`);
 app.get('/', function(req, res) {
-  res.render('pages/index', {index_data: index_data, branding_data: branding_data});
+  res.render('pages/index', {index_data: index_data, branding_data: branding_data, privacy: privacy.name});
 });
 
 // about page
-let about_data = require('./views/data/about.json')
+let about_data = require(`./views/data/about.${privacy == Privacy.Shiver ? "shiver." : ""}json`);
 app.get('/about', function(req, res) {
   res.render('pages/about', {about_data: about_data, branding_data: branding_data});
 });
 
 // community agreement page
-let agreement_data = require('./views/data/community_agreement.json')
+let agreement_data = require(`./views/data/community_agreement.json`);
 app.get('/agreement', function(req, res) {
 	res.render('pages/community_agreement', {agreement_data: agreement_data, branding_data: branding_data});
 });
 
 // manifesto page
-let manifesto_data = require('./views/data/manifesto.json')
+let manifesto_data = require(`./views/data/manifesto.json`);
 app.get('/manifesto', function(req, res) {
   res.render('pages/manifesto', {manifesto_data: manifesto_data, branding_data: branding_data});
 });
 
 // solutions page
-let solutions_data = require('./views/data/solutions.json')
+let solutions_data = require(`./views/data/solutions.json`);
 app.get('/solutions', function(req, res) {
     res.render('pages/solutions', {solutions_data: solutions_data, branding_data: branding_data});
 });
 
 // needs page
-let needs_data = require('./views/data/needs.json')
+let needs_data = require(`./views/data/needs.json`);
 app.get('/needs', function(req, res) {
     res.render('pages/needs', {needs_data: needs_data, branding_data: branding_data});
 });
 
 // contact page
-let contact_data = require('./views/data/contact.json')
+let contact_data = require(`./views/data/contact.json`);
 app.get('/connect', function(req, res) {
     res.render('pages/contact', {contact_data: contact_data, branding_data: branding_data});
 });
 
 // shiver page
-let shiver_data = require('./views/data/shiver.json')
+let shiver_data = require(`./views/data/shiver.${privacy == Privacy.Shiver ? "shiver." : ""}json`);
 app.get('/shiver', function(req, res) {
 	res.render('pages/shiver', {shiver_data: shiver_data, branding_data: branding_data});
 });
 
+// departeds page
+let departeds_data = require(`./views/data/departeds.${privacy == Privacy.Shiver ? "shiver." : ""}json`);
+app.get('/departeds', function(req, res) {
+	res.render('pages/departeds', {departeds_data: departeds_data, branding_data: branding_data});
+});
+
 // story page
-let story_data = require('./views/data/story.json')
+let story_data = require(`./views/data/story.json`);
 app.get('/story', function(req, res) {
     res.render('pages/story', {story_data: story_data, branding_data: branding_data});
 });
 
 // kickstarter page
-let kickstarter_data = require('./views/data/kickstarter.json')
+let kickstarter_data = require(`./views/data/kickstarter.json`);
 app.get('/kickstarter', function(req, res) {
     res.render('pages/kickstarter', {kickstarter_data: kickstarter_data, branding_data: branding_data});
 });
@@ -76,7 +101,7 @@ app.get('/kickstarter', function(req, res) {
 });
 
 // palestine page
-let palestine_data = require('./views/data/palestine.json')
+let palestine_data = require(`./views/data/palestine.json`);
 app.get('/palestine', function(req, res) {
     res.render('pages/palestine', {palestine_data: palestine_data, branding_data: branding_data});
 });
@@ -97,7 +122,7 @@ app.get("/operating-agreement", (req, res) => {
 });
 
 // invite page
-let invite_data = require('./views/data/invite.json')
+let invite_data = require(`./views/data/invite.json`);
 app.get('/invite', function(req, res) {
 	res.render('pages/invite', {invite_data: invite_data, branding_data: branding_data});
 });
@@ -115,7 +140,7 @@ app.get('/invite/new_partner', function(req, res) {
 });
 
 // contracts congratulations page
-let contractCongrats_data = require('./views/data/contracts_congratulations.json')
+let contractCongrats_data = require(`./views/data/contracts_congratulations.json`);
 app.get('/contracts/congratulations', function(req, res) {
 	res.render('pages/contracts_congratulations', {contractCongrats_data: contractCongrats_data, branding_data: branding_data});
 });
@@ -198,9 +223,21 @@ var elizabethcasswell_site = require('../departeds.elizabethcasswell/server.js')
 app.use('/departeds/elizabethcasswell/', express.static('../departeds.elizabethcasswell'));
 app.use('/departeds/elizabethcasswell/', elizabethcasswell_site);
 
+if (privacy == Privacy.Shiver) {
+	var shiverpodlanding_site = require('../shiverpod_landingpage/server.js');
+
+	app.use('/welcome/', express.static('../shiverpod_landingpage'));
+	app.use('/welcome/', shiverpodlanding_site);
+}
+
+var prod_ip = "169.197.80.52";
+if (privacy == Privacy.Shiver) {
+	prod_ip = "192.168.8.191";
+}
+
 if (process.env.NODE_ENV == 'production') {
-	app.listen(9000, "169.197.80.52");
-	console.log('[PROD] Server is listening on 169.197.80.52:9000');
+	app.listen(9000, prod_ip);
+	console.log(`[PROD] Server is listening on ${prod_ip}:9000`);
 }
 else {
 	app.listen(9000);

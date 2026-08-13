@@ -8,6 +8,11 @@
 
 <div class="content">
   <%- include('../partials/header', {title:index_data.title}) %>
+
+  <% if (privacy == "shiver") { %>
+  <button class="visitpublic" title="Check out our public-facing web presence." onclick="location.href='https://bluesharkfriends.com';">🌐 See Public</button>
+  <% } %>
+
 <div class="script-text">
 <p>
   <%- branding_data.tagline %>

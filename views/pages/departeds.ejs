@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:departeds_data.title, description:departeds_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/topbar', {title:departeds_data.title}) %>
+
+<div class="content">
+    <%- include('../partials/header', {title:departeds_data.title, subheading: 'Our Dearly Departed'}) %>
+    <div class="crew-banner">
+    <ul>
+    <% departeds_data.people.forEach(member => { %>
+        <li><% if (member.avatar_ref === "") { %><% } else { %><img src="<%= member.avatar_ref %>" width="50px" height="50px" /><% } %><span><% if(member.link_ref === "") { %><%= member.name %><% } else { %><a href="<%= member.link_ref %>"><%= member.name %></a><% } %></span></li>
+    <% }); %>
+    </ul>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
+
+</body>
+</html>
