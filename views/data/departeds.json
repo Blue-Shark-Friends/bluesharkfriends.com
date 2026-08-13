@@ -1,0 +1,12 @@
+{
+    "title": "Our Dearly Departed",
+    "description": "Blue Shark Friends community lost loved ones",
+    "people":
+    [
+        {
+            "name": "Elizabeth Casswell",
+            "link_ref": "https://bluesharkfriends.com/departeds/elizabethcasswell",
+            "avatar_ref": "departeds/elizabethcasswell/images/elizabethcasswell.jpg"
+        }
+    ]
+}

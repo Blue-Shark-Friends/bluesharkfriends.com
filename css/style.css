@@ -55,6 +55,28 @@ body {
 	border-color: #42A1BD;
 }
 
+.visitpublic {
+    font-family: "Trebuchet MS", sans-serif;
+    position: absolute;
+    top: 5.6em;
+    right: 10px;
+    border-radius: 30px;
+    border: 2px solid #888888;
+    padding: 2px;
+    box-shadow: 2px 5px black;
+    width: 125px;
+    height: 30px;
+}
+
+.visitpublic:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+.visitpublic:active {
+  background-color: #f1f1f1;
+}
+
 em {
   font-weight: bold;
   font-style: normal;
