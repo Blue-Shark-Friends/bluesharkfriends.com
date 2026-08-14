@@ -21,14 +21,16 @@
 
 <% about_data.people.forEach(member => { %>
   <div>
-    <h3><%= member.name %></h3>
+    <h3><a href="<%= member.link_ref %>"><%= member.name %></a>
+      <br /><small><i><%= member.title %></i></small>
+    </h3>
     <h4 class="pronouns"><%= member.pronouns %></h4>
-    <img class="about-img" src="<%= member.img_src %>" width="200px" height="267px" alt="<%= member.img_alt %>"/>
+    <img class="about-img" src="<%= member.img_src %>" width="200px" height="267px" alt="<%= member.img_alt %>" style="object-fit: cover; <% if(member.name === "Juniper Lusby") { %>object-position: 0 -70px<% } %>"/>
     <div style="text-align: left;">
       <% if(member.name === "Hannah Parker"){ %>
         <%= member.bio %>
         <br /><br />
-        <a href="<%= member.link_ref %>"><%= member.link_text %></a>
+        If you want to get to know me a little better, here is a <a href="https://hannahtransmom.bluesharkfriends.com/">work-in-progress prototype web app</a> that I'm working on to better describe myself.
       <% } else { %>
         <% member.bio.split("\n").forEach(element => { %>
           <%= element %>

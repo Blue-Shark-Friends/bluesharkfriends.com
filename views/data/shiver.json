@@ -16,16 +16,28 @@
             "avatar_ref": "images/josie.jpg"
         },
         {
+            "name": "Fred Beck",
+            "link_ref": "https://fredbeck.bluesharkfriends.com",
+            "role": "Pirate",
+            "avatar_ref": "https://fredbeck.bluesharkfriends.com/images/fred.jpg"
+        },
+        {
+            "name": "Juniper Lusby",
+            "link_ref": "https://juniperlusby.bluesharkfriends.com",
+            "role": "Pirate",
+            "avatar_ref": "https://juniperlusby.bluesharkfriends.com/images/Juniper.jpg"
+        },
+        {
+            "name": "Loki Myers",
+            "link_ref": "https://sagemyers.bluesharkfriends.com",
+            "role": "Pirate",
+            "avatar_ref": "https://sagemyers.bluesharkfriends.com/images/sage.jpg"
+        },
+        {
             "name": "Cara Lynn Carter",
             "link_ref": "https://caralynncarter.bluesharkfriends.com",
             "role": "Deckhand",
             "avatar_ref": "https://caralynncarter.bluesharkfriends.com/images/cara.jpeg"
-        },
-        {
-            "name": "Fred Beck",
-            "link_ref": "https://fredbeck.bluesharkfriends.com",
-            "role": "Deckhand",
-            "avatar_ref": "https://fredbeck.bluesharkfriends.com/images/fred.jpg"
         },
         {
             "name": "Kirstyn Piper Plummer",
@@ -34,28 +46,10 @@
             "avatar_ref": "https://kirstynplummer.bluesharkfriends.com/images/kirstyn.jpg"
         },
         {
-            "name": "Juniper Lusby",
-            "link_ref": "https://juniperlusby.bluesharkfriends.com",
-            "role": "Deckhand",
-            "avatar_ref": "https://juniperlusby.bluesharkfriends.com/images/Juniper.jpg"
-        },
-        {
-            "name": "Sage Myers",
-            "link_ref": "https://sagemyers.bluesharkfriends.com",
-            "role": "Deckhand",
-            "avatar_ref": "https://sagemyers.bluesharkfriends.com/images/sage.jpg"
-        },
-        {
             "name": "Rachel McCauley Wylie",
             "link_ref": "https://rachelmccauley.bluesharkfriends.com/",
             "role": "Deckhand",
             "avatar_ref": "https://rachelmccauley.bluesharkfriends.com/images/rachel.jpg"
-        },
-        {
-            "name": "A. H.",
-            "link_ref": "",
-            "role": "Deckhand",
-            "avatar_ref": ""
         },
         {
             "name": "Jess Saffa",
@@ -82,24 +76,6 @@
             "avatar_ref": "https://jupiter.bluesharkfriends.com/images/Screenshot_20240821_125329_Photos.jpg"
         },
         {
-            "name": "Alyssa Crowe",
-            "link_ref": "https://alyssa-crowe.bluesharkfriends.com",
-            "role": "Crewmate",
-            "avatar_ref": "https://alyssa-crowe.bluesharkfriends.com/images/2024-09-06%2018.14.38.jpg"
-        },
-        {
-            "name": "Maya Wylie",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
-            "name": "Rowan Stone",
-            "link_ref": "",
-            "role": "Crewmate",
-            "avatar_ref": ""
-        },
-        {
             "name": "Alice Baker",
             "link_ref": "",
             "role": "Crewmate",
@@ -120,49 +96,43 @@
         {
             "name": "Kels Leigh",
             "link_ref": "",
-            "role": "Recruit",
+            "role": "Crewmate",
             "avatar_ref": ""
         },
         {
-            "name": "Johanna Armstrong",
+            "name": "Nikki Neptune",
             "link_ref": "",
-            "role": "Recruit",
+            "role": "Crewmate",
             "avatar_ref": ""
         },
         {
-            "name": "Kaitlin Shetler",
+            "name": "Molly Ooten",
             "link_ref": "",
-            "role": "Recruit",
+            "role": "Crewmate",
             "avatar_ref": ""
         },
         {
-            "name": "River Bailey",
+            "name": "Sharon Stapel",
             "link_ref": "",
-            "role": "Recruit",
+            "role": "Crewmate",
             "avatar_ref": ""
         },
         {
-            "name": "Serena Sonoma",
+            "name": "Leigh Kroeker",
             "link_ref": "",
-            "role": "Recruit",
+            "role": "Crewmate",
             "avatar_ref": ""
         },
         {
-            "name": "Parker Schulze",
+            "name": "Cynthia Ward",
             "link_ref": "",
-            "role": "Recruit",
+            "role": "Crewmate",
             "avatar_ref": ""
         },
         {
-            "name": "Jessica Sellars",
+            "name": "Amy Plummer",
             "link_ref": "",
-            "role": "Recruit",
-            "avatar_ref": ""
-        },
-        {
-            "name": "Aimee Plummer",
-            "link_ref": "",
-            "role": "Recruit",
+            "role": "Crewmate",
             "avatar_ref": ""
         }
     ],
@@ -174,9 +144,24 @@
             "logo_ref": "ofm-logo.png"
         },
         {
-            "name": "CRIT Lab",
-            "link_ref": "https://oliverhaimson.com/team.html",
-            "logo_ref": "crit-lab-logo.png"
+            "name": "Project Liferaft",
+            "link_ref": "https://projectliferafthome.carrd.co/",
+            "logo_ref": "project-liferaft-2020 (Poster (US)).jpg"
+        },
+        {
+            "name": "PfCA",
+            "link_ref": "https://gopfca.org",
+            "logo_ref": "pfca-LOGO_CLEAR+copy-1.gif"
+        },
+        {
+            "name": "NixIt",
+            "link_ref": "https://nixit.ai/",
+            "logo_ref": "nixit-logo-white.svg"
+        },
+        {
+            "name": "Scavenged Words",
+            "link_ref": "https://www.instagram.com/scavengedwords/",
+            "logo_ref": "scavenged-words.png"
         }
     ]
 }

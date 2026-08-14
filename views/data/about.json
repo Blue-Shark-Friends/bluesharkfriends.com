@@ -1,26 +1,53 @@
 {
     "title": "About",
     "description": "About Blue Shark Friends and the co-founders, Hannah Parker and Josie Stewart. A company run by two disabled trans women to serve the transgender community. BIPOC led, Black led",
-    "about_bsf": "Blue Shark Friends is a technology consulting and software development company that in many ways is part of the post-pandemic small business boom, but our story is rooted in more than just a reaction to the evolving economic pressures at large.\n\nOur commitment to making software for trans people is drawn from our experiences as disabled trans women fighting to survive the current cissexist regime.\n\nWe feel that the key to surviving these times is to strengthen the bonds within our community. We want to be more than a business\u2014we want to build a network of trans enterprises that reflects and reinforces our chosen family.\n\nIf you're interested, we invite you to get to know us a little better.",
+    "about_bsf": "Blue Shark Friends is a worker-owned digital community building company. We started as a software development company that in many ways was part of the post-pandemic small business boom, but our story is rooted in more than just a reaction to the evolving economic pressures at large.\n\nOur commitment to making software for trans people was drawn from our experiences as disabled trans people fighting to survive the current cissexist regime.\n\nWe feel that the key to surviving these times is to strengthen the bonds within our community. We want to be more than a business\u2014we want to build a network of trans enterprises that reflects and reinforces our chosen family.\n\nNow, in our third year of business, we have grown our community, both within and beyond the boundaries of our business. We are a community of artists and tech professionals, and we want to share our resources with your communities. We're building tools, we're building practices, and we're creating the beauty we want to see in the world. If you're interested, we invite you to get to know us a little better, as we figure out how to build digital community in a more sustainable way.",
     "people":
     [
         {
             "name": "Hannah Parker",
+            "title": "Community Weaver",
             "pronouns": "she/her/hers/them",
-            "bio": "This isn't enough space for me to tell you who I am.  Since I'm the Principal Business Analyst and co-founder, I think it's better if I show you.",
-            "link_text": "Would you like to know more \u2026",
+            "bio": "Hi!  I am a Community Weaver for Blue Shark Friends.  I build relationships.  Within our community.  With partners.  With friends.  With you.",
             "link_ref": "https://hannahparker.bluesharkfriends.com",
             "img_src": "images/hannah.jpg",
             "img_alt": "Picture of Hannah - a black trans woman crouching on a concrete porch and leaning against a green colored wall of house.  She has long black hair, a teal shirt with a picture of a wolf and is smiling.  She is proudly holding a cane in her right hand."
         },
         {
             "name": "Josie Stewart",
+            "title": "Engineering Strategist",
             "pronouns": "she/her or mey/mer",
-            "bio": "I'm the Principal Software Engineer and a co-founder of Blue Shark Friends. I'm not sure where to start with my story, honestly. I don't have a clean timeline to what brought me here today.\n\nI've been a professional software engineer for over a decade, but I've been embedded in tech development since early childhood. I've been out to everyone as trans since 2019, but I've been out to my immediate family since 2013. I just got diagnosed with Ehlers-Danlos syndrome in 2023, but in many ways disability has been a part of my life for much longer than I realized. Sometimes it feels like I have to tell my whole life story for anything about me to make sense.\n\nSince it's too late for me to spare you the Spider-Man style rant, I might as well also say that I'm a sci-fi/fantasy nerd, and I spend a lot of my spare time writing out details about my favorite works of fiction just to structure my thoughts about them.\n\nBlue Shark Friends is important to me, first and foremost, because I need it. After the past three years of hell in my old job just to be pushed out after asking for accommodations, I need to be doing something for my people. This is the way I believe I can do that. But also, I think our community needs it.\n\nMy situation is not all that unique for a trans person. Many of my friends are in similar straits or worse. A lot of folks have already turned to self-employment, and technology is an unavoidable lifeline. I know we can help folks out with our background, and I believe we have to. We need to be a true community\u2014directing our energies and skills into each other as much as possible.",
-            "link_text": "",
+            "bio": "After working for over a decade as a professional software engineer, I was pushed out of my corporate job after asking for accommodations. I knew I needed to be doing something for my people. I've been embedded in tech development since early childhood, and I wanted to find a way to use my skillset within my community. As a disabled trans woman, sometimes it feels like I have to tell my whole life story for anything about me to make sense. But in the age of Flock cameras and paid Nazi agitators on social media, I don't think you need to know my story to know why we're here.\n\nBlue Shark Friends is important to me, first and foremost, because I need it. I believe community-built and community-supported technology is the only way forward. Not just for me, but for us all.\n\nA lot of folks have already turned to self-employment, and technology is an unavoidable lifeline. I know we can help folks out with our background, and I believe we have to. We need to be a true community\u2014directing our energies and skills into each other as much as possible.",
             "link_ref": "https://called2voyage.bluesharkfriends.com",
             "img_src": "images/josie.jpg",
             "img_alt": "Picture of Josie - a smiling blue-haired trans woman with purple-rimmed glasses standing in front of a brick wall"
+        },
+        {
+            "name": "Fred Beck",
+            "title": "Customer Advocate",
+            "pronouns": "they/them",
+            "bio": "I'm just a person working for the company.",
+            "link_ref": "https://fredbeck.bluesharkfriends.com",
+            "img_src": "images/fred.jpg",
+            "img_alt": "Picture of Fred"
+        },
+        {
+            "name": "Juniper Lusby",
+            "title": "Art Director",
+            "pronouns": "they/them",
+            "bio": "Existing at the intersection of queer and disabled and divorced from familial support, I have had to absolutely claw my way out of the gutter and Blue Shark Friends has been instrumental in finding my footing. All I really want is to get my head above water and help others do the same.",
+            "link_ref": "https://juniperlusby.bluesharkfriends.com",
+            "img_src": "images/Juniper.jpg",
+            "img_alt": "Picture of Juniper"
+        },
+        {
+            "name": "Loki Myers",
+            "title": "Marketing Strategist",
+            "pronouns": "they/them",
+            "bio": "I'm a disabled parent of cats trying to create space for my family and yours.",
+            "link_ref": "https://sagemyers.bluesharkfriends.com",
+            "img_src": "images/loki.jpg",
+            "img_alt": "Picture of Loki"
         }
     ]
 }
