@@ -58,7 +58,7 @@ app.get('/manifesto', function(req, res) {
 // solutions page
 let solutions_data = require(`./views/data/solutions.json`);
 app.get('/solutions', function(req, res) {
-    res.render('pages/solutions', {solutions_data: solutions_data, branding_data: branding_data});
+    res.render('pages/solutions', {solutions_data: solutions_data, branding_data: branding_data, privacy: privacy.name});
 });
 
 // needs page
