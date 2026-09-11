@@ -216,6 +216,10 @@ app.get("/trademarkpolicy" , (req,res) => {
 	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/TfyHqqaR9X7AGgW");
 });
 
+app.get('/consult', function(req, res) {
+	res.redirect(301, "https://app.cal.com/bluesharkfriends/consult");
+});
+
 // hosted sites
 
 var elizabethcasswell_site = require('../departeds.elizabethcasswell/server.js');
