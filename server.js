@@ -76,7 +76,7 @@ app.get('/connect', function(req, res) {
 // shiver page
 let shiver_data = require(`./views/data/shiver.${privacy == Privacy.Shiver ? "shiver." : ""}json`);
 app.get('/shiver', function(req, res) {
-	res.render('pages/shiver', {shiver_data: shiver_data, branding_data: branding_data});
+	res.render('pages/shiver', {shiver_data: shiver_data, branding_data: branding_data, privacy: privacy});
 });
 
 // departeds page

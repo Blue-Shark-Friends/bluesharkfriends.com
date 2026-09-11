@@ -10,10 +10,10 @@
     <%- include('../partials/header', {title:shiver_data.title, subheading: 'Our Shiver'}) %>
     <div>
 		<div style="float: left">
-			See our <a href="http://shiverguide.shiver/methodology">Community Strategy</a>
+			See our <a href="<% if (privacy == "shiver") { %>http://shiverguide.shiver/methodology<% } else { %>https://shiverguide.info/methodology<% } %>">Community Strategy</a>
 		</div>
 		<div id="powerdynamics">
-			See our <a href="http://shiverguide.shiver/powerdynamics">Power Dynamics</a>
+			See our <a href="<% if (privacy == "shiver") { %>http://shiverguide.shiver/powerdynamics<% } else { %>https://shiverguide.info/powerdynamics<% } %>">Power Dynamics</a>
 		</div>
 	</div>
 	<br />
